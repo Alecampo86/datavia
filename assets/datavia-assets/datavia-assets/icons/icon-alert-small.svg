@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="23" viewBox="0 0 26 23">
+  <defs>
+    <filter id="Polígono_17" x="0" y="0" width="26" height="23" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_108" data-name="Grupo 108" transform="translate(-485 -130)">
+    <g transform="matrix(1, 0, 0, 1, 485, 130)" filter="url(#Polígono_17)">
+      <g id="Polígono_17-2" data-name="Polígono 17" transform="translate(3 1)" fill="red" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 19.12578964233398 16.5 L 0.8742111921310425 16.5 L 10 0.9861590266227722 L 19.12578964233398 16.5 Z" stroke="none"/>
+        <path d="M 10 1.97230052947998 L 1.7484130859375 16 L 18.2515869140625 16 L 10 1.97230052947998 M 10 0 L 20 17 L 0 17 L 10 0 Z" stroke="none"/>
+      </g>
+    </g>
+    <text id="_" data-name="!" transform="translate(498 146)" fill="#fff" font-size="12" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-1.632" y="0">!</tspan></text>
+  </g>
+</svg>

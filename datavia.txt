@@ -1,0 +1,28 @@
+Anotaciones proyecto DATAVIA
+
+REQUERIMIENTOS:
+
+fondo en movimiento 
+eos
+
+backgrounds en movimiento
+
+
+-clean slider curved background
+https://codepen.io/mrspok407/pen/NRxBWa
+
+
+-ambient background
+https://codepen.io/mimikos/pen/wKqyqY
+
+-particles
+https://codepen.io/deathfang/pen/WxNVoq
+
+
+-verify studios
+https://veritystudios.com/
+
+-10 stunning 3d css Effects
+https://redstapler.co/10-stunning-css-3d-effect-must-see/
+
+investigar three js

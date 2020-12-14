@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.759" height="36.121" viewBox="0 0 34.759 36.121">
+  <g id="contact-tracing-icon" transform="translate(-6.5 -7.463)">
+    <g id="Layer_14" data-name="Layer 14" transform="translate(7 7.963)">
+      <path id="Trazado_83" data-name="Trazado 83" d="M17.6,14.4a1.623,1.623,0,0,1,1.157-.479h2.418a.571.571,0,0,0,0-1.14H18.759a2.775,2.775,0,0,0-2.777,2.777v19.39a2.757,2.757,0,0,0,.813,1.964,2.8,2.8,0,0,0,1.963.813h2.418a.571.571,0,0,0,0-1.14H18.759a1.647,1.647,0,0,1-1.157-.48,1.623,1.623,0,0,1-.479-1.157V15.562A1.627,1.627,0,0,1,17.6,14.4Z" transform="translate(-0.634 -7.325)"/>
+      <g id="Icon_feather-user" data-name="Icon feather-user" transform="translate(0 11.676)">
+        <path id="Trazado_70" data-name="Trazado 70" d="M16.407,26.4V25.1a2.6,2.6,0,0,0-2.6-2.6H8.6A2.6,2.6,0,0,0,6,25.1v1.3" transform="translate(-6 -14.695)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Trazado_71" data-name="Trazado 71" d="M17.2,7.1a2.6,2.6,0,1,1-2.6-2.6,2.6,2.6,0,0,1,2.6,2.6Z" transform="translate(-9.398 -4.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Icon_feather-user-2" data-name="Icon feather-user" transform="translate(26.064)">
+        <path id="Trazado_70-2" data-name="Trazado 70" d="M13.694,25.385v-.962A1.924,1.924,0,0,0,11.771,22.5H7.924A1.924,1.924,0,0,0,6,24.424v.962" transform="translate(-6 -15.951)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Trazado_71-2" data-name="Trazado 71" d="M15.847,6.424A1.924,1.924,0,1,1,13.924,4.5a1.924,1.924,0,0,1,1.924,1.924Z" transform="translate(-10.076 -4.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Icon_feather-user-3" data-name="Icon feather-user" transform="translate(26.064 25.686)">
+        <path id="Trazado_70-3" data-name="Trazado 70" d="M13.694,25.385v-.962A1.924,1.924,0,0,0,11.771,22.5H7.924A1.924,1.924,0,0,0,6,24.424v.962" transform="translate(-6 -15.951)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Trazado_71-3" data-name="Trazado 71" d="M15.847,6.424A1.924,1.924,0,1,1,13.924,4.5a1.924,1.924,0,0,1,1.924,1.924Z" transform="translate(-10.076 -4.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

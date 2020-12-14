@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.551" height="41" viewBox="0 0 30.551 41">
+  <g id="temperature-calibration-icon" transform="translate(-65.5 -425.5)">
+    <g id="Temperature" transform="translate(81.985 425.576)">
+      <path id="Trazado_30" data-name="Trazado 30" d="M32.508,28.47V4.475a4.475,4.475,0,0,0-8.951,0V28.47A6.963,6.963,0,0,0,21,33.886a7.033,7.033,0,1,0,14.066,0,6.963,6.963,0,0,0-2.557-5.415ZM28.033,39.64A5.75,5.75,0,0,1,24.58,29.289a.639.639,0,0,0,.256-.518V4.475a3.2,3.2,0,1,1,6.394,0v24.3a.639.639,0,0,0,.256.511A5.754,5.754,0,0,1,28.033,39.64Z" transform="translate(-21 0)" fill="#545660"/>
+      <path id="Trazado_31" data-name="Trazado 31" d="M31.753,35.977V16.918a1.918,1.918,0,0,0-3.836,0V35.977a3.836,3.836,0,0,0,1.1,7.071,3.887,3.887,0,0,0,.818.083,3.836,3.836,0,0,0,1.918-7.154Zm-.307,5.307a2.557,2.557,0,1,1-2.634-4.328.639.639,0,0,0,.384-.588V16.918a.639.639,0,1,1,1.279,0V36.367a.639.639,0,0,0,.384.588,2.557,2.557,0,0,1,.588,4.328Z" transform="translate(-22.802 -5.41)" fill="#545660"/>
+    </g>
+    <g id="Grupo_56" data-name="Grupo 56" transform="translate(21)">
+      <rect id="Rectángulo_77" data-name="Rectángulo 77" width="10" height="40" transform="translate(45 426)" fill="none" stroke="#545660" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="Línea_78" data-name="Línea 78" x1="4.5" transform="translate(45.5 430.5)" fill="none" stroke="#545660" stroke-linecap="round" stroke-width="1"/>
+      <line id="Línea_79" data-name="Línea 79" x1="4.5" transform="translate(45.5 440.5)" fill="none" stroke="#545660" stroke-linecap="round" stroke-width="1"/>
+      <line id="Línea_80" data-name="Línea 80" x1="4.5" transform="translate(45.5 450.5)" fill="none" stroke="#545660" stroke-linecap="round" stroke-width="1"/>
+      <line id="Línea_81" data-name="Línea 81" x1="4.5" transform="translate(45.5 460.5)" fill="none" stroke="#545660" stroke-linecap="round" stroke-width="1"/>
+      <line id="Línea_83" data-name="Línea 83" x1="3" transform="translate(45.5 435.5)" fill="none" stroke="#545660" stroke-linecap="round" stroke-width="1"/>
+      <line id="Línea_84" data-name="Línea 84" x1="3" transform="translate(45.5 445.5)" fill="none" stroke="#545660" stroke-linecap="round" stroke-width="1"/>
+      <line id="Línea_85" data-name="Línea 85" x1="3" transform="translate(45.5 455.5)" fill="none" stroke="#545660" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

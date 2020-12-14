@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="34" viewBox="0 0 28 34">
+  <g id="Grupo_162" data-name="Grupo 162" transform="translate(8235.3 -1759)">
+    <g id="Icon_feather-video" data-name="Icon feather-video" transform="translate(-8227.918 1768.884)">
+      <path id="Trazado_99" data-name="Trazado 99" d="M28.333,10.5,24,13.6l4.333,3.1Z" transform="translate(-14.715 -9.262)" fill="none" stroke="#85b0cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Trazado_100" data-name="Trazado 100" d="M2.738,7.5H9.547a1.238,1.238,0,0,1,1.238,1.238v6.19a1.238,1.238,0,0,1-1.238,1.238H2.738A1.238,1.238,0,0,1,1.5,14.928V8.738A1.238,1.238,0,0,1,2.738,7.5Z" transform="translate(-1.5 -7.5)" fill="none" stroke="#85b0cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(-8239.3 1758)">
+      <path id="Trazado_128" data-name="Trazado 128" d="M31.5,15C31.5,25.5,18,34.5,18,34.5S4.5,25.5,4.5,15a13.5,13.5,0,1,1,27,0Z" fill="none" stroke="#85b0cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
