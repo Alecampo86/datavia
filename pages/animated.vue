@@ -1,5 +1,7 @@
 <template>
-  <div id="container"></div>
+  <div id="container">
+    Hola
+  </div>
 </template>
 <script>
 import * as THREE from 'three'
