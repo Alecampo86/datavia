@@ -15,7 +15,7 @@
       data-aos-once="true"
     >
       <div class="contenedor">
-        <!-- <h3 class="titulo">Interestellar</h3> -->
+        <!-- <h3 class="titulo"></h3> -->
         <!-- <p class="descripcion">
           Narra las aventuras de un grupo de exploradores que hacen uso de un
           agujero de gusano recientemente descubierto para superar las
