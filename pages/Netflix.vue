@@ -8,7 +8,12 @@
     /></a>
 
     <!-- peliculas principal -->
-    <div class="pelicula-principal">
+    <div
+      class="pelicula-principal"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
       <div class="contenedor">
         <!-- <h3 class="titulo">Interestellar</h3> -->
         <!-- <p class="descripcion">
@@ -47,7 +52,11 @@
           <i class="fas fa-angle-left"></i>
         </button>
 
-        <div class="contenedor-carousel">
+        <div
+          class="contenedor-carousel"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div class="carousel">
             <div class="pelicula">
               <a href="#"
@@ -91,6 +100,7 @@
 export default {
   name: "netflix",
   mounted() {
+    AOS.init();
     const fila = document.querySelector(".contenedor-carousel");
     const peliculas = document.querySelectorAll(".pelicula");
 

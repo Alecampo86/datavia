@@ -103,14 +103,14 @@
         <div class="row align-items-center justify-content-xl-between">
           <div class="col-xl-6">
             <div class="copyright text-center text-lg-left text-muted">
-              © {{year}} <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank" rel="noopener">Creative Tim</a> &
-              <a href="https://www.binarcode.com?ref=creative-tim" class="font-weight-bold ml-1" target="_blank" rel="noopener">Binar Code</a>
+              © {{year}} <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank" rel="noopener">Datavia</a> &
+              <a href="https://www.binarcode.com?ref=creative-tim" class="font-weight-bold ml-1" target="_blank" rel="noopener">Persiscal</a>
             </div>
           </div>
           <div class="col-xl-6">
             <ul class="nav nav-footer justify-content-center justify-content-xl-end">
               <li class="nav-item">
-                <a href="https://www.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Creative Tim</a>
+                <a href="https://www.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Datavia</a>
               </li>
               <li class="nav-item">
                 <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank" rel="noopener">About Us</a>

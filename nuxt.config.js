@@ -44,6 +44,8 @@ module.exports = {
           "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       },
       { rel: 'icon', type: 'image/png', href: 'favicon.png' },
+      { rel: 'stylesheet', type: "text/css", href: 'assets/sass/normalize.css'},
+      { rel: 'stylesheet', href: "https://unpkg.com/aos@next/dist/aos.css"},
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'},
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap'},
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity: "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/", crossorigin: "anonymous"}
@@ -51,6 +53,10 @@ module.exports = {
     script: [
       {
         src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        type: "text/javascript"
+      },
+      {
+        src: "https://unpkg.com/aos@next/dist/aos.js",
         type: "text/javascript"
       },
       {
@@ -76,6 +82,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    'assets/sass/normalize.css',
     'assets/css/nucleo/css/nucleo.css',
     'assets/sass/argon.scss'
   ],
@@ -88,6 +95,7 @@ module.exports = {
     {src: '~/plugins/dashboard/full-calendar', ssr: false },
     {src: '~/plugins/dashboard/world-map', ssr: false },
     {src: '~/plugins/three.js' },
+    {src: '~/plugins/aos.js' },
 
   ],
 

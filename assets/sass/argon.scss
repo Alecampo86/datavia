@@ -71,6 +71,30 @@
 @import 'custom/transitions';
 
 
+.header {
+  min-height: 600px;
+}
+
+.titulo-header {
+  margin-top: 180px;
+  color: #799fb7;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.headerTitle {
+  text-align: right;
+  color: #799fb7;
+  font-weight: 700;
+}
+
+.image-header {
+    width: 105%;
+    position: absolute;
+    left: 43px;
+    top: 41px;
+}
+
 .auth-layout {
   min-height: 100vh;
   // background-color: black
@@ -143,16 +167,18 @@ h1{
 }
 
 .datavia-logo-header{
-  scale: 30%;
+  width: 35%;
   border: black;
-  margin-top: 0px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+
 }
 
 
-.datavia-logo{
-  scale: 30%;
-  border: black;
-  margin-top: -100px;
+.datavia-logo {
+  width: 35%;
+  margin-top: -45px;
+  margin-bottom: 100px;
 }
 
 .slider-icon{

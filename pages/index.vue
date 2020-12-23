@@ -4,23 +4,37 @@
     <div class="header pt-5 pb-7">
       <div class="container">
         <div class="header-body">
-          <a href="#"
-            ><img
-              src="~assets/datavia-assets/datavia-assets/logo/datavia_logo_w.svg"
-              alt=""
-              class="datavia-logo-header"
-          /></a>
-
+          <div class="col-12 text-center">
+            <a href="#"
+              ><img
+                src="~assets/datavia-assets/datavia-assets/logo/datavia_logo_w.svg"
+                alt=""
+                class="datavia-logo-header"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                data-aos-once="true"
+            /></a>
+          </div>
 
           <div class="row">
             <!-- //////////////////TITULOS con GIT FINAL//////////////////// -->
             <div class="col-lg-6">
               <div>
-                <h1 class="titulo-header display-2 mb-0 text-red">WELCOME TO DATAVIA</h1>
+                <h1
+                  class="titulo-header display-2 mb-0 text-red"
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                >
+                  WELCOME TO DATAVIA
+                </h1>
               </div>
 
               <div>
-                <h1 class="headerTitle display-2 mb-0 text-red">
+                <h1
+                  class="headerTitle display-2 mb-0 text-red"
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                >
                   3 DEEP<small>&trade;</small> PLATFORM
                 </h1>
               </div>
@@ -32,6 +46,8 @@
               <img
                 src="~assets/images/seguridad-control-facial.jpg"
                 class="image-header"
+                data-aos="fade-up"
+                data-aos-duration="1500"
               />
             </div>
             <!-- /////////////////FIN HEADER IMAGE/////////////////// -->
@@ -39,7 +55,11 @@
 
           <!-- //////////////////////iconos///////////////////// -->
           <div class="row">
-            <div class="icon-box col-6">
+            <div
+              class="icon-box col-6"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <img
                 src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
                 class="icon-cam"
@@ -542,8 +562,10 @@ import Netflix from "./Netflix.vue";
 export default {
   layout: "AuthLayout",
   name: "home-page",
+  mounted() {
+    AOS.init();
+  },
   components: {
-
     Netflix,
 
     [Tooltip.name]: Tooltip,
@@ -552,27 +574,4 @@ export default {
 </script>
 
 <style>
-.header {
-  min-height: 600px;
-}
-
-.titulo-header {
-  margin-top: 180px;
-  color: #799fb7;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-}
-
-.headerTitle {
-  text-align: right;
-  color: #799fb7;
-  font-weight: 700;
-}
-
-.image-header {
-  scale: 0.5;
-  position: absolute;
-  left: -265px;
-  top: -72px;
-}
 </style>
