@@ -60,10 +60,12 @@
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              <img
-                src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
-                class="icon-cam"
-              />
+              <nuxt-link to="/Camera-setup">
+                <img
+                  src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
+                  class="icon-cam"
+                />
+              </nuxt-link>
 
               <nuxt-link to="/AI-sensing-dashboard">
                 <img

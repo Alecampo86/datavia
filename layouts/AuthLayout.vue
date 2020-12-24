@@ -37,7 +37,7 @@
 
        <ul class="navbar-nav mr-auto">
          <li class="nav-item">
-           <nuxt-link to="/dashboard" class="nav-link">
+           <nuxt-link to="/Camera-setup" class="nav-link">
              <span class="nav-link-inner--text">Camera Setup</span>
            </nuxt-link>
          </li>
