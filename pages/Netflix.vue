@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <a href="#"
+    <!-- <a href="#"
       ><img
         src="~assets/datavia-assets/datavia-assets/logo/datavia_logo_w.svg"
         alt=""
         class="datavia-logo"
-    /></a>
+    /></a> -->
 
-    <!-- peliculas principal -->
+    <!-- peliculas principal 2-->
     <div
       class="pelicula-principal"
       data-aos="fade-left"
@@ -180,12 +180,13 @@ export default {
   margin-top: -40px;
   margin-bottom: 1.12em;
   display: flex;
-  align-items: end;
+  flex: end;
 }
 
 .pelicula-principal .contenedor {
   margin: 0 auto;
   margin-bottom: 6.25em;
+  margin-top: 10px;
 }
 
 .pelicula-principal .titulo {
@@ -227,7 +228,7 @@ export default {
 .contenedor-titulo-controles {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  flex: end;
 }
 
 .contenedor-titulo-controles h3 {

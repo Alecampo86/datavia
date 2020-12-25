@@ -5,10 +5,30 @@
       <div class="container">
         <div class="header-body">
           <section class="py-6 pb-9">
+            <div class="row justify-content-center text-center mt-2">
+              <!-- //////////////////TITULOS con GIT FINAL//////////////////// -->
+              <div class="camera-title col-lg-9">
+                <div>
+                  <h1
+                    class="titulo-header display-1 mb-0 text-red"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                  >
+                    CAMERA
+                  </h1>
+                </div>
 
-            <div class="row justify-content-center text-center">
-              <div class="col-md-9">
-                <h1>CAMERA</h1>
+                <div>
+                  <h1
+                    class="headerTitle display-1 mb-0 text-red"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                  >
+                    SETUP
+                  </h1>
+                </div>
+              </div>
+              <div class="col-md-9 mt-5">
                 <netflix />
               </div>
             </div>
@@ -40,15 +60,24 @@
 
 <script>
 import Netflix from "../pages/Netflix.vue";
-
+import AOS from "aos";
 export default {
   components: { Netflix },
   layout: "AuthLayout",
+  mounted() {
+    AOS.init();
+  },
 };
 </script>
 
 
 
 
-<style>
+<style scoped>
+.camera-title {
+  position: relative;
+  left: -105px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 </style>
