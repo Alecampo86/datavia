@@ -10,7 +10,7 @@
               <div class="camera-title col-lg-9">
                 <div>
                   <h1
-                    class="titulo-header display-1 mb-0 text-red"
+                    class="titulo-camera display-4 mb-0 text-danger"
                     data-aos="fade-left"
                     data-aos-duration="1500"
                   >
@@ -20,7 +20,7 @@
 
                 <div>
                   <h1
-                    class="headerTitle display-1 mb-0 text-red"
+                    class="titulo-setup display-1 mb-0 text-warning"
                     data-aos="fade-right"
                     data-aos-duration="1500"
                   >

@@ -177,8 +177,8 @@ export default {
     url(~assets/images/AI-background.jpg);
   background-position: center center;
   background-size: cover;
-  margin-top: -40px;
-  margin-bottom: 1.12em;
+  margin-top: 45px;
+  margin-bottom: 60px;
   display: flex;
   flex: end;
 }

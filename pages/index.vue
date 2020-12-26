@@ -18,11 +18,11 @@
 
           <div class="row">
             <!-- //////////////////TITULOS con GIT FINAL//////////////////// -->
-            <div class="col-lg-6">
+            <div class="header-title col-lg-6">
               <div>
                 <h1
-                  class="titulo-header display-2 mb-0 text-red"
-                  data-aos="fade-right"
+                  class="welcomer-datavia display-4 mb-0 text-danger"
+                  data-aos="fade-left"
                   data-aos-duration="1500"
                 >
                   WELCOME TO DATAVIA
@@ -31,7 +31,7 @@
 
               <div>
                 <h1
-                  class="headerTitle display-2 mb-0 text-red"
+                  class="deep-platform display-1 mb-0 text-warning"
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >

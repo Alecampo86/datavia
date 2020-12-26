@@ -71,7 +71,19 @@
   min-height: 600px;
 }
 
-.titulo-header {
+.header-title{
+  letter-spacing: 3px;
+  margin-top: 33px;
+}
+
+.welcome-datavia{
+  text-align: start;
+}
+
+.deep-platform{
+  text-align: end;
+}
+.titulo-camera {
   margin-top: 0;
   color: #799fb7;
   font-weight: 700;
@@ -81,7 +93,7 @@
   letter-spacing: 25px;
 }
 
-.headerTitle {
+.titulo-setup {
   text-align: right;
   margin-bottom: 30px;
   font-weight: 700;
