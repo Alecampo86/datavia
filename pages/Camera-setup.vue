@@ -2,10 +2,12 @@
   <div>
     <!--Header-->
     <div class="header pt-5 pb-7">
-      <div class="container">
+      <div class="m-0">
         <div class="header-body">
           <section class="py-6 pb-9">
-            <div class="row justify-content-center text-center mt-2">
+            <div class="row m-3 justify-content-center text-center mt-2">
+
+
               <!-- //////////////////TITULOS con GIT FINAL//////////////////// -->
               <div class="camera-title col-lg-9">
                 <div>
@@ -28,7 +30,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="col-md-9 mt-5">
+              <div class="col-lg-12 mt-5">
                 <netflix />
               </div>
             </div>
@@ -79,5 +81,15 @@ export default {
   left: -105px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.camera-column{
+  height: 550px;
+  margin-top: 250px;
+}
+
+.camera-column2{
+  height: 550px;
+  margin-top: 250px;
 }
 </style>

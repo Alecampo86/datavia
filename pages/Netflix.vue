@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="netflix">
     <!-- <a href="#"
       ><img
         src="~assets/datavia-assets/datavia-assets/logo/datavia_logo_w.svg"
@@ -8,26 +8,107 @@
     /></a> -->
 
     <!-- peliculas principal 2-->
-    <div
-      class="pelicula-principal"
-      data-aos="fade-left"
-      data-aos-duration="1000"
-      data-aos-once="true"
-    >
-      <div class="contenedor">
-        <!-- <h3 class="titulo"></h3> -->
-        <!-- <p class="descripcion">
-          Narra las aventuras de un grupo de exploradores que hacen uso de un
-          agujero de gusano recientemente descubierto para superar las
-          limitaciones de los viajes espaciales tripulados y vencer las inmensas
-          distancias que tiene un viaje interestelar.
-        </p> -->
+    <!-- /////////////////////////////////////////////////////////////////////////////// -->
 
-        <!-- <button role="button" class="boton"><i class="fas fa-play"></i>AI Sensing</button> -->
-        <!-- <button role="button" class="boton"><i class="fas fa-info-circle"></i>More info</button> -->
+    <div class="row">
+      <div class="col-lg-6 bgcontainer border">
+        <!-- <div class="container bgpic"> -->
+        <!-- imagen 1 -->
+        <div
+          class="pelicula-principal"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        ></div>
+        <!-- </div> -->
+        <!-- imagen 2 CAMLOGO -->
+        <div class="cam-logo">
+          <img
+            src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
+          />
+          <span class="cam-span text-white">CAMERA SETUP</span>
+        </div>
+        <!-- imagen 3 PLANO -->
+        <div class="cam-blueprint">
+
+          <!-- <img
+            src="~assets/datavia-assets/datavia-assets/images/big-map-example.jpg"
+          /> -->
+        </div>
+        <span class="cam-location">CAMERA LOCATION</span>
       </div>
+
+      <div class="col-lg-6 border">
+        <div class="container">
+          <div class="peliculas-recomendadas contenedor">
+            <div class="contenedor-titulo-controles text-center my-5">
+              <input
+                type="text"
+                placeholder="Search cameras"
+                class="form-control col-lg-12"
+              />
+
+              <div class="indicadores"></div>
+            </div>
+
+            <div class="contenedor-principal">
+              <button
+                role="button"
+                id="flecha-izquierda"
+                class="flecha-izquierda"
+              >
+                <i class="fas fa-angle-left"></i>
+              </button>
+
+              <div
+                class="contenedor-carousel"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
+                <div class="carousel">
+                  <div class="pelicula">
+                    <a href="#"
+                      ><img
+                        src="~assets/images/Biometric-identification.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"
+                      ><img src="~assets/images/face-recog2.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"
+                      ><img src="~assets/images/face-recog1.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"
+                      ><img src="~assets/images/face-recog3.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="pelicula">
+                    <a href="#"
+                      ><img
+                        src="~assets/images/facial-recognition-technologies-time-to-face-the-music_1500.jpg"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <button role="button" id="flecha-derecha" class="flecha-derecha">
+                <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /////////////////////////////////////////////////////////////////////////////// -->
     </div>
-    <img
+    <!-- <img
       src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
       class="slider-icon mx-3"
     />
@@ -38,7 +119,7 @@
     <img
       src="~assets/datavia-assets/datavia-assets/icons/icon-dashboard-report.svg"
       class="slider-icon mx-3"
-    />
+    /> -->
 
     <!-- peliculas recomendadas -->
     <div class="peliculas-recomendadas contenedor">
@@ -170,17 +251,94 @@ export default {
 <style scoped>
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
+  border-top: solid;
+  border-bottom: solid;
   font-size: 16px;
-  min-height: 30em;
+  height: 45%;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
-    url(~assets/images/AI-background.jpg);
+    url(~assets/images/public-recog.jpg);
   background-position: center center;
   background-size: cover;
-  margin-top: 45px;
-  margin-bottom: 60px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  width: 100%;
+}
+
+.bgcontainer {
   display: flex;
-  flex: end;
+  flex-flow: row wrap;
+  height: 660px;
+}
+.bgpic {
+  position: absolute;
+  top: 0;
+  left: 340px;
+  width: 400px;
+  height: 260px;
+}
+
+.cam-logo {
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  left: 60px;
+  top: 435px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  border-bottom: white solid;
+  border-top: white solid;
+}
+
+.cam-logo img {
+    vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    top: 12px;
+    left: 50px;
+}
+
+
+
+.cam-blueprint {
+    position: absolute;
+    top: 295px;
+    left: 376px;
+    width: 45%;
+    height: 57%;
+    background-size: cover;
+    -webkit-transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    background-image: url(/_nuxt/assets/datavia-assets/datavia-assets/images/big-map-example.jpg);
+    border-top: white solid;
+    border-bottom: white solid;
+}
+
+.cam-blueprint img {
+  height: 80%;
+}
+
+.cam-span{
+
+    color: #fff !important;
+    position: absolute;
+    top: 105px;
+    width: -12px;
+    left: 47px;
+}
+
+.cam-location{
+  color: #fff !important;
+    position: absolute;
+    top: 350px;
+    width: -12px;
+    left: 385px;
+
 }
 
 .pelicula-principal .contenedor {

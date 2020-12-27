@@ -21,7 +21,7 @@
             <div class="header-title col-lg-6">
               <div>
                 <h1
-                  class="welcomer-datavia display-4 mb-0 text-danger"
+                  class="welcome-datavia display-4 mb-0 text-danger"
                   data-aos="fade-left"
                   data-aos-duration="1500"
                 >

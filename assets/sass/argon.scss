@@ -78,10 +78,13 @@
 
 .welcome-datavia{
   text-align: start;
+  font-weight: 100;
+    font-size: 81px;
 }
 
 .deep-platform{
   text-align: end;
+  font-weight: 100;
 }
 .titulo-camera {
   margin-top: 0;
@@ -130,12 +133,13 @@ h1 {
 .icon-box {
   // border: 5px white;
   height: 217px;
-  padding-top: 65px;
+  padding-top: 24px;
 }
 
 .icon-cam {
   margin-right: 100px;
   transition: all 600ms;
+  width: 100%;
 }
 
 .icon-cam:hover {
@@ -495,3 +499,4 @@ $appShadowClr: rgba(#000, 0.3);
 }
 
 //////////////////////////////CLEAN SLIDER WITH CURVED BACKGROUND/////////////////
+
