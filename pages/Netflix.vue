@@ -1,51 +1,66 @@
 <template>
   <div class="netflix">
-    <!-- <a href="#"
+    <a href="#"
       ><img
         src="~assets/datavia-assets/datavia-assets/logo/datavia_logo_w.svg"
         alt=""
         class="datavia-logo"
-    /></a> -->
+    /></a>
 
     <!-- peliculas principal 2-->
     <!-- /////////////////////////////////////////////////////////////////////////////// -->
 
-    <div class="row">
-      <div class="col-lg-6 bgcontainer border">
-        <!-- <div class="container bgpic"> -->
+    <div class="row border border-danger rounded">
+      <div class="col-lg-6 ">
+        <div class="cam-name">
+          <span>Camera Name</span>
+          <h3>Camera c1 Out single loren ipsum cam</h3>
+          <img class="temp-calib" src="~assets/datavia-assets/datavia-assets/icons/icon-temperature-calibration-active.svg" >
+          <img class="measure-calib" src="~assets/datavia-assets/datavia-assets/icons/icon-measurement-calibration-active.svg" >
+          <button type="button" class="cam-btn btn btn-info">Camera Setup</button>
+
+        </div>
         <!-- imagen 1 -->
-        <div
-          class="pelicula-principal"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        ></div>
+        <div class="bgcontainer">
+          <div
+            class="pelicula-principal border rounded"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+
+          ></div>
+        </div>
         <!-- </div> -->
         <!-- imagen 2 CAMLOGO -->
         <div class="cam-logo">
           <img
             src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
           />
-          <span class="cam-span text-white">CAMERA SETUP</span>
+          <span class="cam-span text-white">Camera Setup</span>
         </div>
+          <img class="grid-view" src="~assets/datavia-assets/datavia-assets/icons/icon-grid-view-active.svg" >
+          <img class="list-view" src="~assets/datavia-assets/datavia-assets/icons/icon-list-view-active.svg" >
+
         <!-- imagen 3 PLANO -->
-        <div class="cam-blueprint">
+        <div class="cam-blueprint border rounded"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+             >
 
           <!-- <img
             src="~assets/datavia-assets/datavia-assets/images/big-map-example.jpg"
           /> -->
         </div>
-        <span class="cam-location">CAMERA LOCATION</span>
+        <span class="cam-location">Camera Location</span>
       </div>
 
-      <div class="col-lg-6 border">
+      <div class="col-lg-6 ">
         <div class="container">
           <div class="peliculas-recomendadas contenedor">
             <div class="contenedor-titulo-controles text-center my-5">
               <input
                 type="text"
                 placeholder="Search cameras"
-                class="form-control col-lg-12"
+                class="cam-input form-control col-lg-12"
               />
 
               <div class="indicadores"></div>
@@ -61,7 +76,7 @@
               </button>
 
               <div
-                class="contenedor-carousel"
+                class="contenedor-carousel border rounded"
                 data-aos="fade-right"
                 data-aos-duration="1500"
               >
@@ -69,29 +84,29 @@
                   <div class="pelicula">
                     <a href="#"
                       ><img
-                        src="~assets/images/Biometric-identification.png"
+                        src="~assets/images/cam-location-blueprint4.jpg"
                         alt=""
                     /></a>
                   </div>
                   <div class="pelicula">
                     <a href="#"
-                      ><img src="~assets/images/face-recog2.jpg" alt=""
+                      ><img src="~assets/images/cam-location-blueprint.jpg" alt=""
                     /></a>
                   </div>
                   <div class="pelicula">
                     <a href="#"
-                      ><img src="~assets/images/face-recog1.jpg" alt=""
+                      ><img src="~assets/images/cam-location-blueprint4.jpg" alt=""
                     /></a>
                   </div>
                   <div class="pelicula">
                     <a href="#"
-                      ><img src="~assets/images/face-recog3.jpg" alt=""
+                      ><img src="~assets/images/cam-location-blueprint2.jpg" alt=""
                     /></a>
                   </div>
                   <div class="pelicula">
                     <a href="#"
                       ><img
-                        src="~assets/images/facial-recognition-technologies-time-to-face-the-music_1500.jpg"
+                        src="~assets/images/cam-location-blueprint4.jpg"
                         alt=""
                     /></a>
                   </div>
@@ -122,7 +137,7 @@
     /> -->
 
     <!-- peliculas recomendadas -->
-    <div class="peliculas-recomendadas contenedor">
+    <div class="peliculas-recomendadas contenedor mt-5">
       <div class="contenedor-titulo-controles text-center my-2">
         <h3>Applications & Demos</h3>
         <div class="indicadores"></div>
@@ -146,7 +161,7 @@
             </div>
             <div class="pelicula">
               <a href="#"
-                ><img src="~assets/images/face-recog2.jpg" alt=""
+                ><img src="~assets/images/cam-location-blueprint.jpg" alt=""
               /></a>
             </div>
             <div class="pelicula">
@@ -249,10 +264,13 @@ export default {
 </script>
 
 <style scoped>
-/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+
+
+.netflix{
+  margin-top: 40px;
+}
 .pelicula-principal {
-  border-top: solid;
-  border-bottom: solid;
+
   font-size: 16px;
   height: 45%;
   color: #fff;
@@ -260,11 +278,13 @@ export default {
     url(~assets/images/public-recog.jpg);
   background-position: center center;
   background-size: cover;
-  margin-top: 25px;
+  margin-top: 0px;
   margin-bottom: 25px;
-
+  cursor: pointer;
   width: 100%;
 }
+
+
 
 .bgcontainer {
   display: flex;
@@ -282,14 +302,14 @@ export default {
 .cam-logo {
   height: 100px;
   position: absolute;
-  width: 200px;
+  width: 306px;
   left: 60px;
   top: 435px;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 20px;
   border-bottom: white solid;
-  border-top: white solid;
+
 }
 
 .cam-logo img {
@@ -297,17 +317,17 @@ export default {
     border-style: none;
     position: absolute;
     top: 12px;
-    left: 50px;
+    left: -20px;
 }
 
 
 
 .cam-blueprint {
     position: absolute;
-    top: 295px;
+    top: 393px;
     left: 376px;
     width: 45%;
-    height: 57%;
+    height: 40%;
     background-size: cover;
     -webkit-transform: rotateX(45deg);
     transform: rotateX(45deg);
@@ -315,8 +335,7 @@ export default {
     margin-bottom: 25px;
     margin-left: 10px;
     background-image: url(~assets/datavia-assets/datavia-assets/images/big-map-example.jpg);
-    border-top: white solid;
-    border-bottom: white solid;
+    border: #11cdef;
 }
 
 .cam-blueprint img {
@@ -324,23 +343,117 @@ export default {
 }
 
 .cam-span{
-
     color: #fff !important;
     position: absolute;
-    top: 105px;
+    top: 97px;
     width: -12px;
-    left: 47px;
+    left: 0px;
 }
 
 .cam-location{
   color: #fff !important;
     position: absolute;
-    top: 350px;
+    top: 397px;
     width: -12px;
     left: 385px;
 
 }
 
+.cam-name{
+    width: 100%;
+    height: 50px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cam-name span{
+  position: absolute;
+    left: 16px;
+    top: 15px;
+}
+
+.cam-name h3{
+
+    color: #f5365c;
+    font-weight: bold;
+    position: absolute;
+    top: 44px;
+    left: 17px;
+}
+
+.temp-calib{
+    position: absolute;
+    top: 16px;
+    left: 387px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.temp-calib:hover{
+    position: absolute;
+    top: 12px;
+    left: 387px;
+    cursor: pointer;
+
+}
+
+.measure-calib{
+    position: absolute;
+    top: 16px;
+    right: 210px;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.measure-calib:hover{
+  position: absolute;
+    top: 12px;
+    right: 210px;
+    cursor: pointer;
+}
+
+.cam-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.grid-view  {
+    position: absolute;
+    bottom: 117x;
+    left: 250px;
+    top: 572px;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.grid-view:hover  {
+    position: absolute;
+
+    left: 250px;
+    top: 568px;
+    cursor: pointer;
+}
+
+.list-view {
+    position: absolute;
+    cursor: pointer;
+    bottom: 117px;
+    left: 318px;
+    transition: all 100ms;
+}
+
+.list-view:hover {
+    position: absolute;
+    cursor: pointer;
+    bottom: 121px;
+    left: 318px;
+}
+
+.cam-input{
+  margin-top: -30px;
+}
 .pelicula-principal .contenedor {
   margin: 0 auto;
   margin-bottom: 6.25em;

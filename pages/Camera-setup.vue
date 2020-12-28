@@ -6,29 +6,17 @@
         <div class="header-body">
           <section class="py-6 pb-9">
             <div class="row m-3 justify-content-center text-center mt-2">
-
-
               <!-- //////////////////TITULOS con GIT FINAL//////////////////// -->
               <div class="camera-title col-lg-9">
-                <div>
+                <!-- <div>
                   <h1
                     class="titulo-camera display-4 mb-0 text-danger"
                     data-aos="fade-left"
                     data-aos-duration="1500"
                   >
-                    CAMERA
+                    CAMERA SETUP
                   </h1>
-                </div>
-
-                <div>
-                  <h1
-                    class="titulo-setup display-1 mb-0 text-warning"
-                    data-aos="fade-right"
-                    data-aos-duration="1500"
-                  >
-                    SETUP
-                  </h1>
-                </div>
+                </div> -->
               </div>
               <div class="col-lg-12 mt-5">
                 <netflix />
@@ -77,18 +65,19 @@ export default {
 
 <style scoped>
 .camera-title {
-  position: relative;
-  left: -105px;
+  position: absolute;
+  left: 170px;
   margin-bottom: 20px;
   margin-top: 20px;
+  top: 64px;
 }
 
-.camera-column{
+.camera-column {
   height: 550px;
   margin-top: 250px;
 }
 
-.camera-column2{
+.camera-column2 {
   height: 550px;
   margin-top: 250px;
 }
