@@ -54,7 +54,7 @@
           </div>
 
           <!-- //////////////////////iconos///////////////////// -->
-          <div class="row">
+          <!-- <div class="row">
             <div
               class="icon-box col-6"
               data-aos="fade-right"
@@ -79,7 +79,7 @@
                 class="icon-dashboard"
               />
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="separator separator-bottom separator-skew zindex-100">
@@ -104,7 +104,7 @@
     <section class="py-6 pb-9 bg-default">
       <div class="row justify-content-center text-center">
         <div class="col-md-9">
-          <netflix />
+
           <!-- <h2 class="display-3 text-white">A complete HTML solution</h2> -->
           <!-- <p class="lead text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae

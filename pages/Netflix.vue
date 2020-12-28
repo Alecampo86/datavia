@@ -314,7 +314,7 @@ export default {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 10px;
-    background-image: url(/_nuxt/assets/datavia-assets/datavia-assets/images/big-map-example.jpg);
+    background-image: url(~assets/datavia-assets/datavia-assets/images/big-map-example.jpg);
     border-top: white solid;
     border-bottom: white solid;
 }
