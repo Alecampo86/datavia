@@ -10,19 +10,21 @@
 
       <div class="box-2"></div>
       <!-- ////////////////////////////////ICON CAM/////////////////////////////////////// -->
-      <div class="box-3 ">
-        <img
-          class="box-icon-cam"
-          src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
-        />
-        <h3>Camera Management</h3>
-        <div class="arrow-hover  ">
+      <nuxt-link to="/camera-management">
+        <div class="box-3 ">
           <img
-            class="box-arrow"
-            src="~assets/datavia-assets/datavia-assets/icons/icon-arrow.svg"
+            class="box-icon-cam"
+            src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
           />
-        </div >
-      </div>
+          <h3>Camera Management</h3>
+          <div class="arrow-hover  ">
+            <img
+              class="box-arrow"
+              src="~assets/datavia-assets/datavia-assets/icons/icon-arrow.svg"
+            />
+          </div >
+        </div>
+      </nuxt-link>
       <!-- ////////////////////////////////ICON AI/////////////////////////////////////// -->
       <div class="box-4 ">
         <img
