@@ -7,22 +7,20 @@ eos
 
 backgrounds en movimiento
 
+iCONOS UTILES: 
 
--clean slider curved background
-https://codepen.io/mrspok407/pen/NRxBWa
+camera location
+edit camera location
+icon list view
+icon grid view active
+icon-location black
+ico-measurement-calibration
+icon plus
+icon search
+icon setup
+icon temperature calibration
+icon user
 
-
--ambient background
-https://codepen.io/mimikos/pen/wKqyqY
-
--particles
-https://codepen.io/deathfang/pen/WxNVoq
-
-
--verify studios
-https://veritystudios.com/
-
--10 stunning 3d css Effects
-https://redstapler.co/10-stunning-css-3d-effect-must-see/
-
-investigar three js
+volar datavia 
+colores celestes
+mismo margen izquierdo en camera setup
