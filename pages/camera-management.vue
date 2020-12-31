@@ -1,29 +1,35 @@
 <template>
   <section id="background">
-
-    <div class="box-3 ">
-        <img
-          class="box-icon-cam"
-          src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
-        />
-        <h3>Camera Management</h3>
-
-      </div>
+    <div class="box-3">
+      <img
+        class="box-icon-cam"
+        src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
+      />
+      <h3>Camera Management</h3>
+    </div>
 
     <div class="container">
-     <nuxt-link to="/">
-       <div class="icon-menu">
+      <nuxt-link to="/">
+        <div class="icon-menu">
           <div class="logo">
             <img
               src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
               alt=""
             />
+            <small>MENU</small>
           </div>
-       </div>
-     </nuxt-link >
+        </div>
+      </nuxt-link>
 
-      <button class="btn cam-btn">Add New Camera</button>
+      <nuxt-link to="/camera-add">
+        <button class="btn cam-btn">
+          <img class="gear fas fa-cog "
+                src="~assets/datavia-assets/datavia-assets/icons/icon-setup.svg"
+          >Add New Camera
+        </button>
+      </nuxt-link>
     </div>
+    <button class="btn cancel-btn">Cancel</button>
   </section>
 </template>
 
@@ -59,38 +65,70 @@ export default {};
   border-radius: 20px;
 }
 
+.fa-cog:before {
+  content: "\f013";
+  font-size: 28px;
+}
+
 #background {
   background: #191a1d;
   height: 48em;
 }
 
-.icon-menu{
-    padding: 0;
-    cursor: pointer;
-    background: #648498;
-    border-radius: 12px;
+.icon-menu {
+  padding: 0;
+  cursor: pointer;
+  background: #85b0cb;
+  border-radius: 10px;
+  position: absolute;
+  top: -86px;
+  left: 0px;
+  transition: all 200ms;
+}
+
+.icon-menu small{
+  display: none;
+  color: #fafafa;
     position: absolute;
-    top: -86px;
-    left: 0px;
-    /* display: flex; */
-    /* align-items: center; */
+    top: 12px;
+    left: 60px;
+}
+
+.icon-menu:hover {
+  background: #fafafa
+}
+
+.icon-menu:hover .logo{
+  background: #fafafa
+}
+
+.icon-menu:hover small{
+  display: block;
 }
 
 .logo {
-    width: 28px;
-    height: 26px;
-    margin: 10px;
-    cursor: pointer;
-    background: #648498;
-    position: static;
+  width: 28px;
+  height: 26px;
+  margin: 10px;
+  cursor: pointer;
+  background: #85b0cb;
+  position: static;
+  transition: all 200ms;
 }
 
-.cam-btn{
-    color: #CCC;
-    height: 54px;
-    width: 200px;
-    BACKGROUND: #648498;
+.cam-btn {
+  color: #ccc;
+  height: 54px;
+  width: 200px;
+  background: #648498;
+  border-radius: 10px;
+  transition: all 200ms;
+  font-size: 12px
+}
 
+.cam-btn:hover {
+  background: #fafafa;
+  font-size: 14px
 }
 
 .container h1 {
@@ -126,7 +164,7 @@ export default {};
   width: 268px;
   height: 135px;
   top: 35px;
-  left: 650px;
+  left: 606px;
   position: absolute;
 }
 
@@ -135,12 +173,12 @@ export default {};
 }
 
 .box-3 h3 {
-    align-self: end;
-    color:#ccc;
-    position: absolute;
-    left: 93px;
-    top: 11px;
-    font-size: 16px;
+  align-self: end;
+  color: #ccc;
+  position: absolute;
+  left: 75px;
+  top: 11px;
+  font-size: 16px;
 }
 
 .box-4 {
@@ -265,4 +303,61 @@ export default {};
 .arrow-hover3:hover img {
   right: 5px;
 }
+
+.btn {
+    color: black;
+    background: #85b0cb;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-evenly;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    align-content: flex-start;
+}
+
+.cancel-btn{
+  color: black;
+  height: 35px;
+  width: 130px;
+  background: #85b0cb;
+  position: absolute;
+    bottom: 30px;
+    left: 695px;
+    width: 120px;
+    border-radius: 10px;
+    transition: all 100ms;
+  font-size: 12px
+}
+
+.cancel-btn:hover {
+  background: #fafafa;
+  font-size: 14px
+}
+
+.btn img{
+  width: 27px;
+}
+
+.btn:hover .fa-cog[data-v-58b8df42] {
+    content: "\f013";
+    font-size: 35px;
+    animation-name: rotate-gear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+
 </style>
