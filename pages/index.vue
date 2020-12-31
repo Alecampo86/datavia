@@ -16,7 +16,8 @@
             class="box-icon-cam"
             src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
           />
-          <h3>Camera Management</h3>
+             <h3>Camera Management</h3>
+
           <div class="arrow-hover  ">
             <img
               class="box-arrow"
@@ -90,7 +91,7 @@ export default {};
 
 .logo{
 
-    width: 140px;
+    width: 200px;
     margin: 10px;
     cursor: pointer;
 }
@@ -108,17 +109,17 @@ export default {};
 .verathena-box {
   font-size: 82px;
   position: absolute;
-  top: 70px;
+  top: 75px;
   left: 66px;
 }
 
-.box-2 {
-  width: 1235px;
-  height: 60px;
-  position: absolute;
-  top: 358px;
-  left: 171px;
-  border-top: solid black;
+.box-2  {
+    width: 1290px;
+    height: 60px;
+    position: absolute;
+    top: 358px;
+    left: 120px;
+    border-top: solid black;
 }
 
 .box-3 {
@@ -130,6 +131,7 @@ export default {};
   top: 264px;
   left: 650px;
   position: absolute;
+
 }
 
 .box-3 .box-icon-cam {
@@ -142,6 +144,7 @@ export default {};
     position: absolute;
     left: 0px;
     font-size: 14px;
+
 }
 
 .box-4 {
@@ -228,6 +231,7 @@ export default {};
 }
 .arrow-hover:hover {
   border-top: solid #85b0cb;
+  color: aliceblue;
 }
 
 .arrow-hover:hover img{

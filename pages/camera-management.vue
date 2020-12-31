@@ -5,19 +5,19 @@
         class="box-icon-cam"
         src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
       />
-      <h3>Camera Management</h3>
+      <h2 class="text-white ml-3">Camera Management</h2>
     </div>
 
     <div class="container">
       <nuxt-link to="/">
         <div class="icon-menu">
-          <div class="logo">
+          <!-- <div class="logo"> -->
             <img
               src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
               alt=""
             />
             <small>MENU</small>
-          </div>
+          <!-- </div> -->
         </div>
       </nuxt-link>
 
@@ -76,14 +76,20 @@ export default {};
 }
 
 .icon-menu {
-  padding: 0;
-  cursor: pointer;
-  background: #85b0cb;
-  border-radius: 10px;
-  position: absolute;
-  top: -86px;
-  left: 0px;
-  transition: all 200ms;
+    padding: 0;
+    cursor: pointer;
+    background: #85b0cb;
+    border-radius: 7px;
+    position: absolute;
+    width: 37px;
+    top: -86px;
+    left: 0px;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
 }
 
 .icon-menu small{
@@ -158,18 +164,22 @@ export default {};
 }
 
 .box-3 {
-  display: flex;
-
-  align-items: baseline;
-  width: 268px;
-  height: 135px;
-  top: 35px;
-  left: 606px;
-  position: absolute;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 292px;
+    height: 135px;
+    top: 35px;
+    left: 639px;
+    position: absolute;
 }
 
 .box-3 .box-icon-cam {
-  width: 23%;
+    width: 20%;
+    position: absolute;
+    top: -7px;
+    left: -64px;
 }
 
 .box-3 h3 {
