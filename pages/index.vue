@@ -74,7 +74,7 @@ export default {};
   width: 96%;
   height: 90%;
   margin: 0 auto;
-  background-image: url(/~assets/datavia-assets/datavia-assets/images/datavia-background.jpg);
+  background-image: url(/_nuxt/assets/datavia-assets/datavia-assets/images/datavia-background.jpg);
   background-size: 100%;
   background-position: center center;
   background-size: cover;
