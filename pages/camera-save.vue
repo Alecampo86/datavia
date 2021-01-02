@@ -23,23 +23,23 @@
       </nuxt-link>
       <!-- COLUMNA 1 -->
       <div class="columna1 col col-lg-6 h-100 w-100">
+
         <div class="column-title w-75">
-          <img
-            src="~assets/datavia-assets/datavia-assets/icons/icon-plus.svg"
-            alt=""
-          />
-          <h2 class="text-white mt-1">Adding a New Camera</h2>
+          <i class="file fas fa-file-alt"></i>
+          <h2 class="text-white mt-1">Added Camera Description</h2>
         </div>
+
 
         <input
           type="text"
           placeholder="Camera A1 - Building R1 - Floor 1 A"
-          class="form-control mt-3 w-75 p-2 bg-dark"
+          class="cam-name form-control mt-3 w-75 p-2 bg-dark"
         />
-        <!-- <span>Camera A1 - Building R1 - Floor 1 A</span> -->
+
+
 
         <div class="rowSelect row w-100">
-          <input
+            <input
             type="select"
             class="select1 form-control bg-dark mt-3 col-4 p-2"
             placeholder="Sony"
@@ -65,31 +65,29 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sunt? Mollit
       <!-- COLUMNA 2 -->
       <div class="columna2 col col-lg-6 h-100 w-100">
         <div class="column-title w-75">
-          <img
-            src="~assets/datavia-assets/datavia-assets/icons/icon-preview.svg"
-            alt=""
-          />
+          <i class="fas fa-map-marker-alt"></i>
 
-          <h2 class="text-white mt-1">Camera Model Preview</h2>
+          <h2 class="text-white mt-1">Associate Camera to Location</h2>
         </div>
 
-        <input
-          type="text"
-          class="form-control mt-3 w-75 p-2 bg-dark"
-          placeholder="https://123.345.234.234"
-        />
-        <div class="icon-success">
-          <i class="fas fa-check-circle"></i>
-        </div>
 
-        <div class="columnaBox3 w-75 mt-5">
-          <img src="~assets/images/public-recog.jpg" />
+
+        <div class="columnaBox3 w-100 mt-5">
+
+          <nuxt-link to="/flat">
+            <button class="btn flat-btn">
+              <img class="gear fas fa-cog "
+                  src="~assets/datavia-assets/datavia-assets/icons/icon-setup.svg"/>
+                  <span>Add Flat</span>
+
+            </button>
+          </nuxt-link>
         </div>
 
         <div>
           <button class="btn cancel-btn">
             <i class="far fa-window-close"></i>
-            Cancel
+            <span>Cancel</span>
           </button>
         </div>
 
@@ -99,7 +97,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sunt? Mollit
               <img
                 class="icon-save"
                 src="~assets/datavia-assets/datavia-assets/icons/icon-save.svg"
-              />Save and Continue
+              /><span>Save and Continue</span>
             </button>
           </nuxt-link>
         </div>
@@ -166,6 +164,33 @@ a {
   font-size: 12px;
 }
 
+.flat-btn{
+
+  color: black;
+  height: 35px;
+  width: 130px;
+  background: #85b0cb;
+  position: absolute;
+  bottom: 200px;
+    left: 240px;
+  width: 120px;
+  border-radius: 5px;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  font-size: 12px;
+
+
+}
+
+.columnaBox3 img{
+
+    object-fit: initial;
+    width: 16%;
+    position: absolute;
+    left: 18px;
+    top: 7px;
+}
+
 .container {
   width: 80%;
   height: 630px;
@@ -185,16 +210,25 @@ a {
   justify-content: center;
 }
 
+.cam-name{
+    position: absolute;
+    top: 204px;
+}
+
 .form-control {
   border-color: rgb(100, 100, 100);
   cursor: pointer;
 }
 .cam-description {
-  position: absolute;
-  bottom: 119px;
-  left: 73px;
-  width: 454px;
-  height: 140px;
+    position: absolute;
+    bottom: 140px;
+    left: 73px;
+    width: 454px;
+    height: 101px;
+}
+.cam-name{
+    position: absolute;
+    top: 204px;
 }
 .form-control:focus {
   border-color: #85b0cb;
@@ -229,6 +263,24 @@ a {
   position: absolute;
   left: 82px;
   top: 4px;
+}
+
+.column-title i {
+    content: "\f3c5";
+    color: #85b0cb;
+    position: absolute;
+    left: 80px;
+    top: 2px;
+    font-size: x-large;
+}
+
+.file{
+    content: "\f3c5";
+    color: #85b0cb;
+    position: absolute;
+    left: 160px;
+    top: 2px;
+    font-size: x-large;
 }
 
 .icon-menu small {
@@ -305,13 +357,13 @@ a {
 }
 .select1 {
   position: absolute;
-  top: 92px;
+  top: 260px;
   left: 74px;
 }
 .select2 {
   position: absolute;
-  top: 92px;
-  left: 323px;
+  top: 316px;
+  left: 73px;
 }
 
 .columnaBox {
@@ -320,10 +372,15 @@ a {
   justify-content: center;
   align-self: initial;
   position: absolute;
-  top: 126px;
+  top: 0px;
   cursor: pointer;
-  border: solid #85b0cb;
-  border-radius: 10px;
+
+}
+
+.flat-btn span {
+    position: absolute;
+    top: 7px;
+    right: 18px;
 }
 
 .columnaBox2 {
@@ -345,17 +402,20 @@ a {
   justify-content: center;
   align-self: initial;
   position: absolute;
-  top: 126px;
-  height: 337px;
+  top: 0px;
+  height: 441px;
   border: solid #85b0cb;
+  border-style: dotted;
   border-radius: 10px;
   cursor: pointer;
   object-fit: cover;
 }
 
-.columnaBox3 img {
-  -o-object-fit: cover;
-  object-fit: initial;
-  width: 100%;
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+    position: absolute;
+    left: -70px;
 }
+
+
 </style>
