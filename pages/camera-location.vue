@@ -67,12 +67,15 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sunt? Mollit
         </div>
 
         <div class="columnaBox3 w-100 mt-5">
-          <nuxt-link to="camera-location">
-            <img
-              class="flat-img"
-              src="~assets/datavia-assets/datavia-assets/images/big-map-example.jpg"
-            />
-          </nuxt-link>
+          <img
+            class="flat-img"
+            src="~assets/datavia-assets/datavia-assets/images/big-map-example.jpg"
+          />
+
+          <img
+            class="cam-spectrum"
+            src="~assets/datavia-assets/datavia-assets/images/camera-spectrum.png"
+          />
 
           <div>
             <nuxt-link to="/camera-save">
@@ -92,7 +95,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sunt? Mollit
         </div>
 
         <div class="save-continue">
-          <nuxt-link to="/camera-save">
+          <nuxt-link to="/camera-calib">
             <button class="btn save-btn">
               <img
                 class="icon-save"
@@ -279,6 +282,12 @@ a {
   left: 60px;
 }
 
+.cam-spectrum{
+    position: absolute;
+    top: 250px;
+    left: 190px;
+}
+
 .icon-menu:hover {
   background: #fafafa;
 }
@@ -420,6 +429,7 @@ a {
   -o-object-fit: cover;
   object-fit: cover;
   width: inherit;
+  cursor: auto;
 }
 
 .fa-map-marker-alt:before {

@@ -22,85 +22,84 @@
         </div>
       </nuxt-link>
       <!-- COLUMNA 1 -->
-      <div class="columna1 col col-lg-6 h-100 w-100">
-        <div class="column-title w-75">
-          <i class="file fas fa-file-alt"></i>
-          <h2 class="text-white mt-1">Added Camera Description</h2>
-        </div>
-
-        <input
-          type="text"
-          placeholder="Camera A1 - Building R1 - Floor 1 A"
-          class="cam-name form-control mt-3 w-75 p-2 bg-dark"
-        />
-
-        <div class="rowSelect row w-100">
-          <input
-            type="select"
-            class="select1 form-control bg-dark mt-3 col-4 p-2"
-            placeholder="Sony"
-          />
-          <input
-            type="select"
-            class="select2 form-control bg-dark mt-3 col-4 p-2"
-            placeholder="ABC100"
-          />
-        </div>
-
-        <div class="columnaBox w-75 h-25 mt-5">
+      <div class="columna1 col col-lg-12 border w-100">
+        <div class="cam-corner">
           <img src="~assets/datavia-assets/datavia-assets/images/camera.png" />
         </div>
-
-        <div class="form-group">
-          <textarea class="cam-description bg-dark form-control p-2" rows="3">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sunt? Mollitia, rem aliquam consequatur laudantium sapiente doloremque, ducimus possimus in dignissimos fugit aut adipisci consectetur sequi atque, tempora tenetur corporis?</textarea
-          >
-        </div>
-      </div>
-
-      <!-- COLUMNA 2 -->
-      <div class="columna2 col col-lg-6 h-100 w-100">
-        <div class="column-title w-75">
-          <i class="fas fa-map-marker-alt"></i>
-
-          <h2 class="text-white mt-1">Associate Camera to Location</h2>
-        </div>
-
-        <div class="columnaBox3 w-100 mt-5">
-          <nuxt-link to="camera-location">
-            <img
-              class="flat-img"
-              src="~assets/datavia-assets/datavia-assets/images/big-map-example.jpg"
+          <div class="cam-text">
+            <small class="cam-span">Camera A1 - Building R1 - Floor 1A</small>
+             <small class="text-white">Sony - ABC100</small>
+             <img
+              src="~assets/datavia-assets/datavia-assets/icons/Icon-battery-quarter.svg"
+              alt=""
             />
-          </nuxt-link>
+          </div>
+
+        <hr class="line">
+
+        <div class="temp-calib ">
+          <div class="temp-box"><span class="number">2</span></div>
+          <div class="temp-box1"><span class="number">1</span></div>
+          <div class="temp-box1"><span class="number">0</span></div>
+          <div class="temp-box1"><span class="number">-1</span></div>
+          <div class="temp-box"><span class="number">-2</span></div>
+        </div>
+
+
+         <div class="col-lg-6 calib-pic w-100 mt-5">
+          <img src="~assets/images/public-recog.jpg" />
+        </div>
+
+
+        <div class="calib-box  h-75 ">
+          <div class="calib-lines ">
+            <hr class="calib-lineA">
+            <hr class="calib-lineB">
+            <hr class="calib-lineC">
+          </div>
+          <div class="calib-box-textA ">
+            <span class="text-white">0</span>
+            <span class="text-white">0.3</span>
+            <span class="text-white">3</span>
+            <span class="text-white">5</span>
+            <span class="text-white">10</span>
+            <span class="text-white">15</span>
+          </div>
+          <div class="calib-box-textB  ">
+            <span class="text-white">250</span>
+            <span class="text-white">F11</span>
+            <span class="text-white">200</span>
+          </div>
+          <span class="calib-length">L</span>
+          <img class="calib-iso" src="~assets/datavia-assets/datavia-assets/icons/icon-iso.svg" />
+          <div class="calib-box-textC  ">
+            <div>
+              <small class="text-white">Zoom Level</small>
+
+            </div>
+            <small class="text-white">Brightness Level</small>
+            <small class="text-white">Contrast Level</small>
+          </div>
 
           <div>
-            <nuxt-link to="/camera-save">
-              <button class="btn remove-btn">
-                <img src="~assets/datavia-assets/datavia-assets/icons/icon-clean.svg" />
-                <span>Remove</span>
-              </button>
-            </nuxt-link>
-          </div>
-        </div>
-
-        <div>
-          <button class="btn cancel-btn">
+          <button class="btn calib-cancel">
             <i class="far fa-window-close"></i>
-            <span>Cancel</span>
+            Cancel
           </button>
         </div>
 
         <div class="save-continue">
           <nuxt-link to="/camera-save">
-            <button class="btn save-btn">
+            <button class="btn calib-save">
               <img
                 class="icon-save"
                 src="~assets/datavia-assets/datavia-assets/icons/icon-save.svg"
-              /><span>Save and Continue</span>
+              />Save and Continue
             </button>
           </nuxt-link>
         </div>
+
+          </div>
       </div>
     </div>
   </section>
@@ -123,13 +122,13 @@ a {
   text-align: -webkit-center;
 }
 
-.cancel-btn {
+.calib-cancel {
   color: black;
   height: 35px;
   width: 130px;
   background: #85b0cb;
   position: absolute;
-  bottom: 55px;
+  bottom: -10px;
   left: 170px;
   width: 120px;
   border-radius: 5px;
@@ -138,7 +137,7 @@ a {
   font-size: 12px;
 }
 
-.cancel-btn i {
+.calib-cancel i {
   font-size: 15px;
   position: absolute;
   left: 10px;
@@ -149,13 +148,30 @@ a {
   left: 4px;
   top: 10px;
 }
-.save-btn {
+.calib-lines{
+  position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 89%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calib-iso{
+
+    position: absolute;
+    bottom: 146px;
+    right: 0px;
+    width: 32px;
+}
+
+.calib-save {
   color: black;
   height: 35px;
 
   background: #85b0cb;
   position: absolute;
-  bottom: 55px;
+  bottom: -10px;
   left: 312px;
   width: 170px;
   border-radius: 5px;
@@ -177,6 +193,86 @@ a {
   -webkit-transition: all 100ms;
   transition: all 100ms;
   font-size: 12px;
+}
+
+.calib-pic img {
+  -o-object-fit: cover;
+  object-fit: initial;
+  width: 100%;
+}
+
+.calib-box{
+  position: absolute;
+    top: 98px;
+    right: 6px;
+    width: 513px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.calib-lineA{
+  height: 30px;
+  color: #06a0ff;
+  width: 40%;
+}
+
+.calib-lineB{
+  height: 20px;
+  color: #aaaaaa;
+  width: 20%;
+}
+
+.calib-lineC{
+  height: 30px;
+  color:#06a0ff;
+  width: 40%;
+}
+
+.calib-box-textA{
+    height: 20px;
+    width: 99%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.calib-box-textB{
+    height: 35px;
+    width: 99%;
+    position: absolute;
+    top: 197px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.calib-length{
+    color: #85b0cb;
+    font-weight: 900;
+    position: absolute;
+    font-size: 23px;
+    left: 1px;
+    bottom: 143px;
+}
+
+.calib-box-textC{
+    height: 45px;
+    width: 99%;
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caib-iso{
+    position: absolute;
+    bottom: 148px;
+    right: 1px;
+    width: 32px;
 }
 
 .container {
@@ -218,6 +314,17 @@ a {
   position: absolute;
   top: 204px;
 }
+
+.cam-corner {
+  position: absolute;
+  top: -0px;
+  left: 0px;
+}
+
+.cam-corner img {
+  width: 100px;
+}
+
 .form-control:focus {
   border-color: #85b0cb;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #85b0cb;
@@ -330,6 +437,9 @@ a {
   align-items: center;
   justify-content: end;
   flex-flow: column wrap;
+  height: 80%;
+  position: absolute;
+  top: 30px;
 }
 
 .columna2 {
@@ -383,43 +493,79 @@ a {
   top: 54px;
 }
 
-.columnaBox3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: initial;
-  position: absolute;
-  top: 0px;
-  height: 441px;
-
-  cursor: pointer;
-  object-fit: cover;
-}
-
-.remove-btn{
-    color: black;
-    height: 35px;
-    width: 130px;
-    background: #85b0cb;
+.line{
+    color: #dddddd;
+    height: 1px;
     position: absolute;
-    bottom: -5px;
-    left: 4px;
-    width: 120px;
-    border-radius: 5px;
-    -webkit-transition: all 100ms;
-    transition: all 100ms;
-    font-size: 12px;
+    top: 70px;
+    width: 97%;
 }
 
-.remove-btn img{
+.temp-calib{
     position: absolute;
-    left: 8px;
+    top: 99px;
+    left: 20px;
+    width: 20px;
+    height: 75%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    border-left: solid white;
+    border-top: solid white;
+    border-bottom: solid white;
 }
 
-.flat-img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: inherit;
+.temp-box{
+  width: 19px;
+}
+
+.temp-box1{
+  border-bottom: solid white;
+}
+
+.calib-pic {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+
+    -webkit-box-pack: center;
+
+    align-self: initial;
+    position: absolute;
+    top: 50px;
+    height: 380px;
+    border: solid #85b0cb;
+
+    border-radius: 10px;
+    cursor: pointer;
+    -o-object-fit: cover;
+    object-fit: cover;
+    left: 65px;
+}
+
+.cam-span{
+  color: #85b0cb;
+  display: block;
+}
+
+.cam-text{
+    height: 46px;
+    top: 26px;
+    position: absolute;
+    left: 104px;
+    width: 91%;
+}
+
+.cam-text img{
+    position: absolute;
+    right: 25px;
+    top: 0px;
+}
+
+.number{
+    position: absolute;
+    color: white;
+    left: 24px;
 }
 
 .fa-map-marker-alt:before {
