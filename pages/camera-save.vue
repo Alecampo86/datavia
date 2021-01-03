@@ -340,14 +340,14 @@ a {
 .columna1 {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-start;
   flex-flow: column wrap;
 }
 
 .columna2 {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-start;
   flex-flow: column wrap;
 }
 

@@ -44,7 +44,7 @@ module.exports = {
           "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       },
       { rel: 'icon', type: 'image/png', href: 'favicon.png' },
-      { rel: 'stylesheet', type: "text/css", href: 'assets/sass/normalize.css'},
+
       { rel: 'stylesheet', href: "https://unpkg.com/aos@next/dist/aos.css"},
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'},
       { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"},
@@ -83,7 +83,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'assets/sass/normalize.css',
+
     'assets/css/nucleo/css/nucleo.css',
     'assets/sass/argon.scss'
   ],

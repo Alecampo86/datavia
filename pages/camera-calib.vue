@@ -435,7 +435,7 @@ a {
 .columna1 {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-start;
   flex-flow: column wrap;
   height: 80%;
   position: absolute;
@@ -445,7 +445,7 @@ a {
 .columna2 {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-start;
   flex-flow: column wrap;
 }
 
