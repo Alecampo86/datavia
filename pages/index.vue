@@ -1,6 +1,7 @@
 <template>
   <section id="background">
     <div class="container ">
+      <img class="container-img" src="~assets/datavia-assets/datavia-assets/images/datavia-background.jpg" alt="">
       <div class="logo">
         <img src="~assets/datavia-assets/datavia-assets/logo/datavia_logo_w.svg" alt="">
       </div>
@@ -74,8 +75,8 @@ export default {};
   width: 96%;
   height: 90%;
   margin: 0 auto;
-  background-image: url(/_nuxt/assets/datavia-assets/datavia-assets/images/datavia-background.jpg);
-  background-size: 100%;
+  /* background-image: url(/_nuxt/assets/datavia-assets/datavia-assets/images/datavia-background.jpg);
+  background-size: 100%; */
   background-position: center center;
   background-size: cover;
   position: absolute;
@@ -90,10 +91,11 @@ export default {};
 }
 
 .logo{
-
     width: 200px;
     margin: 10px;
     cursor: pointer;
+    position: absolute;
+    top: 0px;
 }
 
 .container h1 {
@@ -104,6 +106,10 @@ export default {};
 
   line-height: 80px;
   letter-spacing: 5px;
+}
+
+.container-img{
+  width: 100%;
 }
 
 .verathena-box {
