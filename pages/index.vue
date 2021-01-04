@@ -1,62 +1,67 @@
 <template>
-  <section id="background">
-    <div class="container ">
-      <img class="container-img" src="~assets/datavia-assets/datavia-assets/images/datavia-background.jpg" alt="">
-      <div class="logo">
-        <img src="~assets/datavia-assets/datavia-assets/logo/datavia_logo_w.svg" alt="">
-      </div>
-      <div class="verathena-box w-50 p-5 h-50">
-        <h1>WELCOME TO VERATHENA <small>&#8482;</small> PLATFORM</h1>
-      </div>
+  <div class="container">
+    <img
+      class="container-img"
+      src="~assets/datavia-assets/datavia-assets/images/datavia-background.jpg"
+      alt=""
+    />
+    <div class="logo">
+      <img
+        src="~assets/datavia-assets/datavia-assets/logo/datavia_logo_w.svg"
+        alt=""
+      />
+    </div>
+    <div class="verathena-box">
+      <h1>WELCOME TO VERATHENA <small>&#8482;</small> PLATFORM</h1>
+    </div>
 
-      <div class="box-2"></div>
-      <!-- ////////////////////////////////ICON CAM/////////////////////////////////////// -->
-      <nuxt-link to="/camera-management">
-        <div class="box-3 ">
-          <img
-            class="box-icon-cam"
-            src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
-          />
-             <h3>Camera Management</h3>
-
-          <div class="arrow-hover  ">
-            <img
-              class="box-arrow"
-              src="~assets/datavia-assets/datavia-assets/icons/icon-arrow.svg"
-            />
-          </div >
-        </div>
-      </nuxt-link>
-      <!-- ////////////////////////////////ICON AI/////////////////////////////////////// -->
-      <div class="box-4 ">
+    <div class="box-2"></div>
+    <!-- ////////////////////////////////ICON CAM/////////////////////////////////////// -->
+    <nuxt-link to="/camera-management">
+      <div class="box-3">
         <img
-          class="box-icon-ai"
-          src="~assets/datavia-assets/datavia-assets/icons/icon-ai-sensing.svg"
+          class="box-icon-cam"
+          src="~assets/datavia-assets/datavia-assets/icons/icon-camera-setup.svg"
         />
-        <h3>Configuration Management</h3>
-        <div class="arrow-hover2 ">
+        <h3>Camera Management</h3>
+
+        <div class="arrow-hover">
           <img
-            class="box4-arrow"
+            class="box-arrow"
             src="~assets/datavia-assets/datavia-assets/icons/icon-arrow.svg"
           />
         </div>
       </div>
-      <!-- ////////////////////////////////ICON DASH/////////////////////////////////////// -->
-      <div class="box-5 ">
+    </nuxt-link>
+    <!-- ////////////////////////////////ICON AI/////////////////////////////////////// -->
+    <div class="box-4">
+      <img
+        class="box-icon-ai"
+        src="~assets/datavia-assets/datavia-assets/icons/icon-ai-sensing.svg"
+      />
+      <h3>Configuration Management</h3>
+      <div class="arrow-hover2">
         <img
-          class="box-icon-dash"
-          src="~assets/datavia-assets/datavia-assets/icons/icon-dashboard-report.svg"
+          class="box4-arrow"
+          src="~assets/datavia-assets/datavia-assets/icons/icon-arrow.svg"
         />
-        <h3>Intelligent Dashboard</h3>
-        <div class="arrow-hover3 ">
-          <img
-            class="box5-arrow"
-            src="~assets/datavia-assets/datavia-assets/icons/icon-arrow.svg"
-          />
-        </div>
       </div>
     </div>
-  </section>
+    <!-- ////////////////////////////////ICON DASH/////////////////////////////////////// -->
+    <div class="box-5">
+      <img
+        class="box-icon-dash"
+        src="~assets/datavia-assets/datavia-assets/icons/icon-dashboard-report.svg"
+      />
+      <h3>Intelligent Dashboard</h3>
+      <div class="arrow-hover3">
+        <img
+          class="box5-arrow"
+          src="~assets/datavia-assets/datavia-assets/icons/icon-arrow.svg"
+        />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -71,18 +76,22 @@ export default {};
   padding: 0px;
 }
 
-.container {
-  width: 96%;
-  height: 90%;
+/* .container {
+
   margin: 0 auto;
-  /* background-image: url(/_nuxt/assets/datavia-assets/datavia-assets/images/datavia-background.jpg);
-  background-size: 100%; */
   background-position: center center;
   background-size: cover;
   position: absolute;
   top: 30px;
   left: 55px;
   max-width: 1407px;
+} */
+
+.container {
+  height: 100vh;
+  max-width: 1407px;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 #background {
@@ -90,17 +99,17 @@ export default {};
   height: 48em;
 }
 
-.logo{
-    width: 200px;
-    margin: 10px;
-    cursor: pointer;
-    position: absolute;
-    top: 0px;
+.logo {
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 74px;
 }
 
 .container h1 {
   font-size: 70px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 100;
   color: #85b0cb;
 
@@ -108,24 +117,28 @@ export default {};
   letter-spacing: 5px;
 }
 
-.container-img{
+.container-img {
   width: 100%;
 }
 
 .verathena-box {
   font-size: 82px;
   position: absolute;
-  top: 75px;
-  left: 66px;
+  top: 214px;
+  left: 113px;
+
+  display: flex;
+  flex-flow: row wrap;
+  width: 522px;
 }
 
-.box-2  {
-    width: 1290px;
-    height: 60px;
-    position: absolute;
-    top: 358px;
-    left: 120px;
-    border-top: solid black;
+.box-2 {
+  width: 1340px;
+  height: 60px;
+  position: absolute;
+  top: 458px;
+  left: 120px;
+  border-top: solid black;
 }
 
 .box-3 {
@@ -134,23 +147,21 @@ export default {};
   align-items: baseline;
   width: 245px;
   height: 135px;
-  top: 264px;
+  top: 364px;
   left: 650px;
   position: absolute;
-
 }
 
 .box-3 .box-icon-cam {
   width: 35%;
 }
 
-.box-3 h3{
-    align-self: flex-end;
-    color: #85b0cb;
-    position: absolute;
-    left: 0px;
-    font-size: 14px;
-
+.box-3 h3 {
+  align-self: flex-end;
+  color: #85b0cb;
+  position: absolute;
+  left: 0px;
+  font-size: 14px;
 }
 
 .box-4 {
@@ -159,8 +170,8 @@ export default {};
   align-items: baseline;
   width: 245px;
   height: 135px;
-  top: 264px;
-  left: 895px;
+  top: 364px;
+  left: 920px;
   position: absolute;
 }
 
@@ -168,12 +179,12 @@ export default {};
   width: 23%;
 }
 
-.box-4 h3{
-    align-self: flex-end;
-    color: #85b0cb;
-    position: absolute;
-    left: 0px;
-    font-size: 14px;
+.box-4 h3 {
+  align-self: flex-end;
+  color: #85b0cb;
+  position: absolute;
+  left: 0px;
+  font-size: 14px;
 }
 
 .box-5 {
@@ -182,8 +193,8 @@ export default {};
   align-items: baseline;
   width: 245px;
   height: 135px;
-  top: 264px;
-  left: 1140px;
+  top: 364px;
+  left: 1198px;
   position: absolute;
 }
 
@@ -191,56 +202,55 @@ export default {};
   width: 30%;
 }
 
-.box-5 h3{
-    align-self: flex-end;
-    color: #85b0cb;
-    position: absolute;
-    left: 0px;
-    font-size: 14px;
+.box-5 h3 {
+  align-self: flex-end;
+  color: #85b0cb;
+  position: absolute;
+  left: 0px;
+  font-size: 14px;
 }
 
-.arrow-hover{
-    position: absolute;
-    top: 94px;
-    width: 245px;
-    height: 43px;
-    cursor: pointer;
-    transition: all 100ms;
-
+.arrow-hover {
+  position: absolute;
+  top: 94px;
+  width: 245px;
+  height: 43px;
+  cursor: pointer;
+  transition: all 100ms;
 }
 
-.arrow-hover2{
-    position: absolute;
-    top: 94px;
-    width: 245px;
-    height: 43px;
-    cursor: pointer;
-    transition: all 100ms;
+.arrow-hover2 {
+  position: absolute;
+  top: 94px;
+  width: 245px;
+  height: 43px;
+  cursor: pointer;
+  transition: all 100ms;
 }
 
-.arrow-hover3{
-    position: absolute;
-    top: 94px;
-    width: 245px;
-    height: 43px;
-    cursor: pointer;
-    transition: all 300ms;
+.arrow-hover3 {
+  position: absolute;
+  top: 94px;
+  width: 245px;
+  height: 43px;
+  cursor: pointer;
+  transition: all 300ms;
 }
 
-.arrow-hover img{
-    width: 5%;
-    transform: rotate(270deg);
-    position: absolute;
-    top: 25px;
-    right: 85px;
-    transition: all 300ms
+.arrow-hover img {
+  width: 5%;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 25px;
+  right: 85px;
+  transition: all 300ms;
 }
 .arrow-hover:hover {
   border-top: solid #85b0cb;
   color: aliceblue;
 }
 
-.arrow-hover:hover img{
+.arrow-hover:hover img {
   right: 5px;
 }
 
@@ -248,16 +258,16 @@ export default {};
   border-top: solid #85b0cb;
 }
 
-.arrow-hover2 img{
-    width: 5%;
-    transform: rotate(270deg);
-    position: absolute;
-    top: 25px;
-    right: 47px;
-    transition: all 300ms;
+.arrow-hover2 img {
+  width: 5%;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 25px;
+  right: 47px;
+  transition: all 300ms;
 }
 
-.arrow-hover2:hover img{
+.arrow-hover2:hover img {
   right: 5px;
 }
 
@@ -265,16 +275,18 @@ export default {};
   border-top: solid #85b0cb;
 }
 
-.arrow-hover3 img{
-    width: 5%;
-    transform: rotate(270deg);
-    position: absolute;
-    top: 25px;
-    right: 85px;
-    transition: all 100ms;
+.arrow-hover3 img {
+  width: 5%;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 25px;
+  right: 85px;
+  transition: all 100ms;
 }
 
-.arrow-hover3:hover img{
+.arrow-hover3:hover img {
   right: 5px;
 }
+
+
 </style>
