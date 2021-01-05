@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="wrap">
     <img
-      class="container-img"
+      class="wrap-img"
       src="~assets/datavia-assets/datavia-assets/images/datavia-background.jpg"
       alt=""
     />
@@ -87,7 +87,7 @@ export default {};
   max-width: 1407px;
 } */
 
-.container {
+.wrap {
   height: 100vh;
   max-width: 1407px;
   margin: 0 auto;
@@ -107,7 +107,7 @@ export default {};
   top: 74px;
 }
 
-.container h1 {
+.wrap h1 {
   font-size: 70px;
   font-family: "Roboto";
   font-weight: 100;
@@ -117,19 +117,19 @@ export default {};
   letter-spacing: 5px;
 }
 
-.container-img {
+.wrap-img {
   width: 100%;
 }
 
 .verathena-box {
-  font-size: 82px;
-  position: absolute;
-  top: 214px;
-  left: 113px;
-
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-flow: row wrap;
   width: 522px;
+  top: 216px;
+  position: absolute;
+  left: 115px;
 }
 
 .box-2 {
@@ -288,5 +288,184 @@ export default {};
   right: 5px;
 }
 
+/* ///////////////////////SMALL ////////////////////////// */
+@media (max-width: 640px) {
+  .wrap {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 4%;
+  }
+}
+/* //////////////////////MEDIUM /////////////////////////// */
+@media (max-width: 768px) {
+  .wrap {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 4%;
+  }
 
+  .verathena-box {
+    font-size: 82px;
+    position: absolute;
+    top: 349px;
+    left: 2px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    width: 691px;
+  }
+
+  .box-3 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 204px;
+    height: 135px;
+    top: 45px;
+    left: 558px;
+    position: absolute;
+  }
+}
+/* ////////////////////////LARGE///////////////////////// */
+@media (max-width: 1024px) {
+  .wrap {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 4%;
+  }
+  .verathena-box {
+    font-size: 82px;
+    position: absolute;
+    top: 149px;
+    left: 55px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    width: 691px;
+  }
+}
+/* /////////////////////////X LARGE//////////////////////// */
+@media (max-width: 1250px) {
+  .wrap {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 4%;
+  }
+
+  .logo {
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 27px;
+    left: 304px;
+}
+
+  .wrap h1 {
+    font-size: 50px;
+    font-family: "Roboto";
+    font-weight: 100;
+    color: #85b0cb;
+    line-height: 52px;
+    letter-spacing: 5px;
+  }
+
+  .verathena-box {
+    font-size: 82px;
+    position: absolute;
+    top: 98px;
+    left: 87px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    width: 615px;
+}
+
+ .wrap h1 {
+    font-size: 44px;
+    font-family: "Roboto";
+    font-weight: 100;
+    color: #85b0cb;
+    line-height: 52px;
+    letter-spacing: 5px;
+}
+
+  .box-3 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 204px;
+    height: 135px;
+    top: 235px;
+    left: 60px;
+    position: absolute;
+}
+
+  .box-3 h3 {
+    top: 70px;
+  }
+
+  .arrow-hover {
+    display: none;
+  }
+
+  .box-4 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 204px;
+    height: 135px;
+    top: 235px;
+    left: 303px;
+    position: absolute;
+}
+
+  .box-4 h3 {
+    top: 70px;
+  }
+
+  .arrow-hover2 {
+    display: none;
+  }
+
+  .arrow-hover3 {
+    display: none;
+  }
+  .box-5 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 204px;
+    height: 135px;
+    top: 235px;
+    left: 560px;
+    position: absolute;
+}
+
+  .box-5 h3 {
+    top: 70px;
+  }
+
+  .box-2 {
+    display: none;
+  }
+}
+/* ////////////////////////X XL///////////////////////// */
+@media (max-width: 1496px) {
+  .wrap {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 4%;
+  }
+}
 </style>

@@ -206,37 +206,4 @@ h1 {
 
 // ////////////////////MEDIA QUERYS ///////////////////////////
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-
-  .box-2{
-    width: 1325px;
-    height: 60px;
-    position: absolute;
-    top: 650px;
-    left: 120px;
-    border-top: solid black;
-}
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1200px;
-  }
-
-
-}
