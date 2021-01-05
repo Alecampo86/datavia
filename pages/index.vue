@@ -133,7 +133,7 @@ export default {};
 }
 
 .box-2 {
-  width: 1340px;
+  width: 1353px;
   height: 60px;
   position: absolute;
   top: 458px;
@@ -231,10 +231,10 @@ export default {};
 .arrow-hover3 {
   position: absolute;
   top: 94px;
-  width: 245px;
+  width: 275px;
   height: 43px;
   cursor: pointer;
-  transition: all 300ms;
+  transition: all 100ms;
 }
 
 .arrow-hover img {
@@ -243,7 +243,7 @@ export default {};
   position: absolute;
   top: 25px;
   right: 85px;
-  transition: all 300ms;
+  transition: all 100ms;
 }
 .arrow-hover:hover {
   border-top: solid #85b0cb;
@@ -349,21 +349,25 @@ export default {};
     width: 691px;
   }
 }
-/* /////////////////////////X LARGE//////////////////////// */
+/* /////////////////////////IPAD//////////////////////// */
 @media (max-width: 1250px) {
   .wrap {
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
-    margin-top: 4%;
+
+  }
+
+  .wrap-img{
+    width: 400%;
   }
 
   .logo {
-    width: 150px;
+    width: 230px;
     margin: 10px;
     cursor: pointer;
     position: absolute;
     top: 27px;
-    left: 304px;
+    left: 266px;
 }
 
   .wrap h1 {
@@ -378,7 +382,7 @@ export default {};
   .verathena-box {
     font-size: 82px;
     position: absolute;
-    top: 98px;
+    top: 180px;
     left: 87px;
     display: -webkit-box;
     display: flex;
@@ -386,12 +390,13 @@ export default {};
     -webkit-box-direction: normal;
     flex-flow: row wrap;
     width: 615px;
+    text-align: center;
 }
 
  .wrap h1 {
     font-size: 44px;
     font-family: "Roboto";
-    font-weight: 100;
+    font-weight: 300;
     color: #85b0cb;
     line-height: 52px;
     letter-spacing: 5px;
@@ -404,7 +409,7 @@ export default {};
     align-items: baseline;
     width: 204px;
     height: 135px;
-    top: 235px;
+    top: 390px;
     left: 60px;
     position: absolute;
 }
@@ -424,7 +429,7 @@ export default {};
     align-items: baseline;
     width: 204px;
     height: 135px;
-    top: 235px;
+    top: 390px;
     left: 303px;
     position: absolute;
 }
@@ -447,7 +452,7 @@ export default {};
     align-items: baseline;
     width: 204px;
     height: 135px;
-    top: 235px;
+    top: 390px;
     left: 560px;
     position: absolute;
 }
@@ -461,11 +466,12 @@ export default {};
   }
 }
 /* ////////////////////////X XL///////////////////////// */
-@media (max-width: 1496px) {
-  .wrap {
+
+/* @media (max-width: 1496px) { */
+  /* .wrap {
     width: 90%;
     margin: 0px auto;
     margin-top: 4%;
   }
-}
+} */
 </style>
