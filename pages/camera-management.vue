@@ -12,20 +12,21 @@
       <nuxt-link to="/">
         <div class="icon-menu">
           <!-- <div class="logo"> -->
-            <img
-              src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
-              alt=""
-            />
-            <small>MENU</small>
+          <img
+            src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
+            alt=""
+          />
+          <small>MENU</small>
           <!-- </div> -->
         </div>
       </nuxt-link>
 
       <nuxt-link to="/camera-add">
         <button class="btn cam-btn">
-          <img class="gear fas fa-cog "
-                src="~assets/datavia-assets/datavia-assets/icons/icon-setup.svg"
-          >Add New Camera
+          <img
+            class="gear fas fa-cog"
+            src="~assets/datavia-assets/datavia-assets/icons/icon-setup.svg"
+          />Add New Camera
         </button>
       </nuxt-link>
     </div>
@@ -76,39 +77,39 @@ export default {};
 }
 
 .icon-menu {
-    padding: 0;
-    cursor: pointer;
-    background: #85b0cb;
-    border-radius: 7px;
-    position: absolute;
-    width: 37px;
-    top: -86px;
-    left: 0px;
-    -webkit-transition: all 200ms;
-    transition: all 200ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 38px;
+  padding: 0;
+  cursor: pointer;
+  background: #85b0cb;
+  border-radius: 7px;
+  position: absolute;
+  width: 37px;
+  top: -86px;
+  left: 0px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
 }
 
-.icon-menu small{
+.icon-menu small {
   display: none;
   color: #fafafa;
-    position: absolute;
-    top: 12px;
-    left: 60px;
+  position: absolute;
+  top: 12px;
+  left: 60px;
 }
 
 .icon-menu:hover {
-  background: #fafafa
+  background: #fafafa;
 }
 
-.icon-menu:hover .logo{
-  background: #fafafa
+.icon-menu:hover .logo {
+  background: #fafafa;
 }
 
-.icon-menu:hover small{
+.icon-menu:hover small {
   display: block;
 }
 
@@ -129,12 +130,12 @@ export default {};
   background: #648498;
   border-radius: 10px;
   transition: all 200ms;
-  font-size: 12px
+  font-size: 12px;
 }
 
 .cam-btn:hover {
   background: #fafafa;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .container h1 {
@@ -164,22 +165,22 @@ export default {};
 }
 
 .box-3 {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: baseline;
-    align-items: baseline;
-    width: 292px;
-    height: 135px;
-    top: 35px;
-    left: 639px;
-    position: absolute;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  width: 292px;
+  height: 135px;
+  top: 35px;
+  left: 639px;
+  position: absolute;
 }
 
 .box-3 .box-icon-cam {
-    width: 20%;
-    position: absolute;
-    top: -7px;
-    left: -64px;
+  width: 20%;
+  position: absolute;
+  top: -7px;
+  left: -64px;
 }
 
 .box-3 h3 {
@@ -315,59 +316,73 @@ export default {};
 }
 
 .btn {
-    color: black;
-    background: #85b0cb;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: space-evenly;
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
-    align-content: flex-start;
+  color: black;
+  background: #85b0cb;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: space-evenly;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  align-content: flex-start;
 }
 
-.cancel-btn{
+.cancel-btn {
   color: black;
   height: 35px;
   width: 130px;
   background: #85b0cb;
   position: absolute;
-    bottom: 30px;
-    left: 695px;
-    width: 120px;
-    border-radius: 10px;
-    transition: all 100ms;
-  font-size: 12px
+  bottom: 30px;
+  left: 695px;
+  width: 120px;
+  border-radius: 10px;
+  transition: all 100ms;
+  font-size: 12px;
 }
 
 .cancel-btn:hover {
   background: #fafafa;
-  font-size: 14px
+  font-size: 14px;
 }
 
-.btn img{
+.btn img {
   width: 27px;
 }
 
 .btn:hover .fa-cog[data-v-58b8df42] {
-    content: "\f013";
-    font-size: 35px;
-    animation-name: rotate-gear;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  content: "\f013";
+  font-size: 35px;
+  animation-name: rotate-gear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-@keyframes rotate-gear{
-  from{
+@keyframes rotate-gear {
+  from {
     transform: rotateZ(0deg);
   }
-  to{
+  to {
     transform: rotateZ(360deg);
   }
 }
 
+/* /////////////////////////IPAD//////////////////////// */
+@media (max-width: 1250px) {
+  .container {
+    width: 86%;
+  }
 
+  .box-3 {
+    left: 265px;
+  }
+
+  .cancel-btn {
+    bottom: 421px;
+    left: 329px;
+  }
+}
 </style>

@@ -31,16 +31,15 @@
           <h2 class="text-white mt-1">Adding a New Camera</h2>
         </div>
 
-
-          <div class="w-75">
-            <nuxt-link to="/camera-A1">
-              <input
-                type="text"
-                placeholder="Camera A1 - Building R1 - Floor 1 A"
-                class="form-control mt-3  p-2 bg-dark"
-              />
-            </nuxt-link>
-          </div>
+        <div class="cam-input w-75">
+          <nuxt-link class="" to="/camera-A1">
+            <input
+              type="text"
+              placeholder="Camera A1 - Building R1 - Floor 1 A"
+              class="form-control mt-3 p-2 bg-dark"
+            />
+          </nuxt-link>
+        </div>
 
         <!-- <span>Camera A1 - Building R1 - Floor 1 A</span> -->
 
@@ -58,11 +57,14 @@
         </div>
 
         <div class="columnaBox w-75 h-25 mt-5">
-          <img src="~assets/datavia-assets/datavia-assets/icons/icon-camera.svg" />
+          <img
+            src="~assets/datavia-assets/datavia-assets/icons/icon-camera.svg"
+          />
         </div>
 
         <div class="form-group">
-          <textarea class="cam-description bg-dark form-control p-2" rows="3">Descripción
+          <textarea class="cam-description bg-dark form-control p-2" rows="3">
+Descripción
 </textarea
           >
         </div>
@@ -85,9 +87,10 @@
           placeholder="URL"
         />
 
-
         <div class="columnaBox3 w-75 mt-5">
-          <img src="~assets/datavia-assets/datavia-assets/icons/icon-camera.svg"/>
+          <img
+            src="~assets/datavia-assets/datavia-assets/icons/icon-camera.svg"
+          />
         </div>
 
         <div>
@@ -292,7 +295,7 @@ a {
 .columna1 {
   display: flex;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   flex-flow: column wrap;
 }
 
@@ -358,8 +361,52 @@ a {
 }
 
 .columnaBox3 img {
-
   object-fit: initial;
+}
 
+@media (max-width: 1250px) {
+  .box-3 {
+    left: 286px;
+    top: 8px;
+  }
+
+  .icon-menu {
+    top: -109px;
+    left: -56px;
+  }
+
+  .column-title {
+    position: absolute;
+    top: -21px;
+    left: 37px;
+  }
+
+  .column-title img {
+    left: -45px;
+    display: none;
+  }
+
+  .select1 {
+    top: 80px;
+    left: 37px;
+  }
+
+  .select2 {
+    top: 81px;
+    left: 165px;
+  }
+
+  .cam-description {
+    left: 43px;
+    width: 223px;
+  }
+
+  .cancel-btn {
+    left: -212px;
+  }
+
+  .save-btn {
+    left: 70px;
+  }
 }
 </style>

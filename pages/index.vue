@@ -231,7 +231,7 @@ export default {};
 .arrow-hover3 {
   position: absolute;
   top: 94px;
-  width: 275px;
+  width: 265px;
   height: 43px;
   cursor: pointer;
   transition: all 100ms;
@@ -285,7 +285,7 @@ export default {};
 }
 
 .arrow-hover3:hover img {
-  right: 5px;
+  right: 10px;
 }
 
 /* ///////////////////////SMALL ////////////////////////// */
