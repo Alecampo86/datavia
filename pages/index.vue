@@ -287,6 +287,7 @@ export default {};
 }
 .arrow-hover:hover {
   border-top: solid #85b0cb;
+  border-width: thick 0 0;
 }
 
 .arrow-hover:hover h3 {
@@ -307,6 +308,7 @@ export default {};
 
 .arrow-hover2:hover {
   border-top: solid #85b0cb;
+  border-width: thick 0 0;
 }
 
 .arrow-hover2 img {
@@ -324,6 +326,7 @@ export default {};
 
 .arrow-hover3:hover {
   border-top: solid #85b0cb;
+  border-width: thick 0 0;
 }
 
 .arrow-hover3 img {
@@ -340,43 +343,60 @@ export default {};
 }
 
 /* ///////////////////////Iphone ///////////////////////////////////////////////////// */
-/* @media (max-width: 767px) {
-
+@media (min-width: 300px) and (max-width: 414px){
   .wrap {
+    height: 100%;
+    margin: 0 auto;
 
+    position: relative;
     width: 100%;
-    margin: 0px auto;
-    margin-top: 4%;
-    background: crimson;
-  }
-
-  .logo{
-    margin-left: 0;
-  }
-
-  .verathena-box  {
-    font-size: 82px;
-    position: absolute;
-    top: 98px;
-    left: 80px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    width: 264px;
-    text-align: center;
-
 }
 
-  .wrap h1{
-    font-size: 32px;
+.wrap-img {
+    width: 400%;
+  }
+
+  .logo {
+    width: 30%;
+    margin: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    left: 36%;
+}
+
+.wrap h1 {
+    font-size: 34px;
+    font-family: "Roboto";
     font-weight: 300;
-    line-height: 58px
+    color: #85b0cb;
+    line-height: 52px;
+    letter-spacing: 5px;
   }
 
-  .wrap-img {
-    width: 500%;
+  .verathena-box {
+    font-size: 82px;
+    position: absolute;
+    top: 16%;
+    left: 12%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    min-width: 82%;
+    text-align: center;
+  }
+
+   .box-group {
+    width: 92%;
+    height: 24%;
+    position: absolute;
+    border: 0;
+    bottom: 0;
+    right: 0%;
+    top: 40%;
+    left: 4%;
 }
 
   .box-3 {
@@ -384,140 +404,98 @@ export default {};
     display: flex;
     -webkit-box-align: baseline;
     align-items: baseline;
-    width: 170px;
-    height: 135px;
-    top: 305px;
-    left: 115px;
+    width: 30%;
+    margin: 10%;
     position: absolute;
 }
+  .box-3 h3 {
+    top: 0;
+  }
 
-.box-3 h3 {
-  top: 55px;
-  left: 11px;
+  .arrow-hover {
+    position: absolute;
+    top: 30%;
+    width: 97%;
+    height: 43px;
+    cursor: pointer;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
 }
 
-.box-4 {
+.arrow-hover2 {
+    position: absolute;
+    top: 30%;
+    width: 97%;
+    height: 43px;
+    cursor: pointer;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.arrow-hover3 {
+    position: absolute;
+    top: 30%;
+    width: 97%;
+    height: 43px;
+    cursor: pointer;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+  .box-4 {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: baseline;
     align-items: baseline;
-    width: 204px;
-    height: 135px;
-    top: 414px;
-    left: 125px;
+    width: 30%;
     position: absolute;
+    margin: 10%;
 }
 
-.box-4 h3 {
-  top: 60px;
-}
+  .box-4 h3 {
+    top: 0;
+  }
 
-.box-5 {
+
+  .box-5 {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: baseline;
     align-items: baseline;
-    width: 204px;
-    height: 135px;
-    top: 550px;
-    left: 126px;
+    width: 30%;
     position: absolute;
+    margin: 10%;
 }
 
-.box-5 h3{
-  top: 60px;
-}
-} */
+  .box-5 h3 {
+    top: 0;
+  }
 
-/* .box-2{
-  display: none;
+
 }
 
-.arrow-hover{
-  display: none;
-}
-
-.arrow-hover2{
-  display: none;
-}
-
-.arrow-hover3{
-  display: none;
-} */
-
-/* //////////////////////TABLET /////////////////////////// */
-/* @media (min-width: 641px) and (max-width: 768px) {
-  .wrap {
-    width: 90%;
-    margin: 0px auto;
-    margin-top: 4%;
-
-  }
-
-  .verathena-box {
-    font-size: 82px;
-    position: absolute;
-    top: 349px;
-    left: 2px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    width: 691px;
-  }
-
-  .box-3 {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: baseline;
-    align-items: baseline;
-    width: 204px;
-    height: 135px;
-    top: 45px;
-    left: 558px;
-    position: absolute;
-  }
-} */
-/* ////////////////////////LARGE///////////////////////// */
-/* @media (max-width: 1024px) {
-  .wrap {
-    width: 90%;
-    margin: 0px auto;
-    margin-top: 4%;
-  }
-  .verathena-box {
-    font-size: 82px;
-    position: absolute;
-    top: 149px;
-    left: 55px;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    width: 691px;
-  }
-} */
 /* /////////////////////////IPAD//////////////////////// */
-@media (min-width: 768px) and (max-width: 1250px) {
+@media (min-width: 415px) and (max-width: 1250px) {
   .wrap {
+    height: 100%;
+    margin: 0 auto;
+
+    position: relative;
     width: 100%;
-    margin: 0px auto;
-  }
+}
 
   .wrap-img {
     width: 400%;
   }
 
   .logo {
-    width: 230px;
+    width: 30%;
     margin: 10px;
     cursor: pointer;
     position: absolute;
-    top: 27px;
-    left: 266px;
-  }
+    top: 2%;
+    left: 36%;
+}
 
   .wrap h1 {
     font-size: 50px;
@@ -531,14 +509,14 @@ export default {};
   .verathena-box {
     font-size: 82px;
     position: absolute;
-    top: 180px;
-    left: 87px;
+    top: 10%;
+    left: 12%;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: row wrap;
-    width: 615px;
+    min-width: 82%;
     text-align: center;
   }
 
@@ -630,6 +608,20 @@ export default {};
     top: -3px;
 }
 
+  .arrow-hover:hover {
+  border-top: solid #85b0cb;
+  border-width: thick 0 0;
+}
+
+.arrow-hover2:hover {
+  border-top: solid #85b0cb;
+  border-width: thick 0 0;
+}
+
+.arrow-hover3:hover {
+  border-top: solid #85b0cb;
+  border-width: thick 0 0;
+}
   .arrow-hover img{
     display: none;
   }
