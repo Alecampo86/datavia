@@ -364,7 +364,7 @@ a {
   object-fit: initial;
 }
 
-@media (max-width: 1250px) {
+@media  (max-width: 1250px) {
   .box-3 {
     left: 286px;
     top: 8px;
