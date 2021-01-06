@@ -28,7 +28,7 @@
             src="~assets/datavia-assets/datavia-assets/icons/icon-plus.svg"
             alt=""
           />
-          <h2 class="text-white mt-1">Adding a New Camera</h2>
+          <h2 class="text-white mt-1 ">Adding a New Cameras</h2>
         </div>
 
         <div class="cam-input w-75">

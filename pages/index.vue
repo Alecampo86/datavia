@@ -343,7 +343,7 @@ export default {};
 }
 
 /* ///////////////////////Iphone ///////////////////////////////////////////////////// */
-@media (min-width: 300px) and (max-width: 414px){
+@media (min-width: 300px) and (max-width: 469px){
   .wrap {
     height: 100%;
     margin: 0 auto;
@@ -475,7 +475,7 @@ export default {};
 }
 
 /* /////////////////////////IPAD//////////////////////// */
-@media (min-width: 415px) and (max-width: 1250px) {
+@media (min-width: 470px) and (max-width: 1250px) {
   .wrap {
     height: 100%;
     margin: 0 auto;

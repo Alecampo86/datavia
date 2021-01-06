@@ -109,7 +109,10 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
 
+
   ],
+
+  buildModules: ['@nuxtjs/tailwindcss'],
   /*
   ** Axios module configuration
   */
@@ -124,6 +127,8 @@ module.exports = {
     transpile: [
       'vee-validate/dist/rules'
     ],
+
+
     /*
     ** You can extend webpack config here
     */
