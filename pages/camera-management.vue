@@ -1,5 +1,17 @@
 <template>
   <section id="background">
+    <nuxt-link to="/">
+      <div class="icon-menu">
+        <!-- <div class="logo"> -->
+        <img
+          src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
+          alt=""
+        />
+        <small>MENU</small>
+        <!-- </div> -->
+      </div>
+    </nuxt-link>
+
     <div class="box-3">
       <img
         class="box-icon-cam"
@@ -9,18 +21,6 @@
     </div>
 
     <div class="container">
-      <nuxt-link to="/">
-        <div class="icon-menu">
-          <!-- <div class="logo"> -->
-          <img
-            src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
-            alt=""
-          />
-          <small>MENU</small>
-          <!-- </div> -->
-        </div>
-      </nuxt-link>
-
       <nuxt-link to="/camera-add">
         <button class="btn cam-btn">
           <img
@@ -47,16 +47,16 @@ export default {};
 }
 
 .container {
-  width: 96%;
-  height: 430px;
+  width: 91%;
+  height: 60%;
   margin: 0 auto;
 
   background-size: 100%;
   background-position: center center;
   background-size: cover;
   position: absolute;
-  top: 116px;
-  left: 55px;
+  top: 23%;
+  left: 5%;
   max-width: 1407px;
   display: flex;
   align-items: center;
@@ -83,14 +83,14 @@ export default {};
   border-radius: 7px;
   position: absolute;
   width: 37px;
-  top: -86px;
-  left: 0px;
   -webkit-transition: all 200ms;
   transition: all 200ms;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 38px;
+  top: 6%;
+  left: 3%;
 }
 
 .icon-menu small {
@@ -171,16 +171,16 @@ export default {};
   align-items: baseline;
   width: 292px;
   height: 135px;
-  top: 35px;
-  left: 639px;
+  top: 10%;
+  left: 44%;
   position: absolute;
 }
 
 .box-3 .box-icon-cam {
   width: 20%;
   position: absolute;
-  top: -7px;
-  left: -64px;
+  top: -10%;
+  left: -18%;
 }
 
 .box-3 h3 {
@@ -335,8 +335,8 @@ export default {};
   width: 130px;
   background: #85b0cb;
   position: absolute;
-  bottom: 30px;
-  left: 695px;
+  bottom: 8%;
+  left: 47%;
   width: 120px;
   border-radius: 10px;
   transition: all 100ms;
@@ -370,19 +370,73 @@ export default {};
   }
 }
 
-/* /////////////////////////IPAD//////////////////////// */
-/* @media (max-width: 1250px) {
+/* ///////////////////////Iphone ///////////////////////////////////////////////////// */
+@media (min-width: 360px) and (max-width: 469px) {
   .container {
-    width: 86%;
+    width: 72%;
+    height: 33%;
+    top: 30%;
+    left: 15%;
   }
 
   .box-3 {
-    left: 265px;
+    top: 20%;
+    left: 32%;
+    width: 80%;
+    height: 8%;
+  }
+
+  .icon-menu {
+    width: 38px;
+    top: 2%;
+    left: 4%;
+  }
+
+  .cam-btn {
+    height: 45px;
+    width: 156px;
+  }
+  .cancel-btn {
+    bottom: 25%;
+    left: 35%;
+  }
+}
+
+/* /////////////////////////IPAD//////////////////////// */
+@media (min-width: 470px) and (max-width: 1250px) {
+  .container {
+    width: 86%;
+    height: 42%;
+    top: 15%;
+    left: 7%;
+  }
+
+  .icon-menu {
+    width: 38px;
+    top: 3%;
+    left: 4%;
+  }
+
+  .cam-btn {
+    height: 45px;
+    width: 156px;
+  }
+
+  .box-3 {
+    left: 38%;
+    top: 9%;
+  }
+
+  .box-icon-cam {
+    width: 20%;
+    position: absolute;
+    top: -10%;
+    left: 0;
   }
 
   .cancel-btn {
-    bottom: 421px;
-    left: 329px;
+    bottom: 35%;
+    left: 43%;
   }
-} */
+}
 </style>
