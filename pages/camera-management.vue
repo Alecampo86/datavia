@@ -371,7 +371,7 @@ export default {};
 }
 
 /* /////////////////////////IPAD//////////////////////// */
-@media (max-width: 1250px) {
+/* @media (max-width: 1250px) {
   .container {
     width: 86%;
   }
@@ -384,5 +384,5 @@ export default {};
     bottom: 421px;
     left: 329px;
   }
-}
+} */
 </style>

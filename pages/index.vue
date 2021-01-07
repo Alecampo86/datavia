@@ -342,147 +342,20 @@ export default {};
   right: 1%;
 }
 
+@media (min-width: 0px) and (max-width: 269px) {
+}
+
 /* ///////////////////////Iphone ///////////////////////////////////////////////////// */
-@media (min-width: 300px) and (max-width: 469px){
+@media (min-width: 360px) and (max-width: 469px) {
   .wrap {
-    height: 100%;
+    height: 667px;
     margin: 0 auto;
 
     position: relative;
     width: 100%;
-}
-
-.wrap-img {
-    width: 400%;
-  }
-
-  .logo {
-    width: 30%;
-    margin: 10px;
-    cursor: pointer;
-    position: absolute;
-    top: 2%;
-    left: 36%;
-}
-
-.wrap h1 {
-    font-size: 34px;
-    font-family: "Roboto";
-    font-weight: 300;
-    color: #85b0cb;
-    line-height: 52px;
-    letter-spacing: 5px;
-  }
-
-  .verathena-box {
-    font-size: 82px;
-    position: absolute;
-    top: 16%;
-    left: 12%;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    min-width: 82%;
-    text-align: center;
+    align-items: center;
   }
-
-   .box-group {
-    width: 92%;
-    height: 24%;
-    position: absolute;
-    border: 0;
-    bottom: 0;
-    right: 0%;
-    top: 40%;
-    left: 4%;
-}
-
-  .box-3 {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: baseline;
-    align-items: baseline;
-    width: 30%;
-    margin: 10%;
-    position: absolute;
-}
-  .box-3 h3 {
-    top: 0;
-  }
-
-  .arrow-hover {
-    position: absolute;
-    top: 30%;
-    width: 97%;
-    height: 43px;
-    cursor: pointer;
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
-}
-
-.arrow-hover2 {
-    position: absolute;
-    top: 30%;
-    width: 97%;
-    height: 43px;
-    cursor: pointer;
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
-}
-
-.arrow-hover3 {
-    position: absolute;
-    top: 30%;
-    width: 97%;
-    height: 43px;
-    cursor: pointer;
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
-}
-
-  .box-4 {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: baseline;
-    align-items: baseline;
-    width: 30%;
-    position: absolute;
-    margin: 10%;
-}
-
-  .box-4 h3 {
-    top: 0;
-  }
-
-
-  .box-5 {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: baseline;
-    align-items: baseline;
-    width: 30%;
-    position: absolute;
-    margin: 10%;
-}
-
-  .box-5 h3 {
-    top: 0;
-  }
-
-
-}
-
-/* /////////////////////////IPAD//////////////////////// */
-@media (min-width: 470px) and (max-width: 1250px) {
-  .wrap {
-    height: 100%;
-    margin: 0 auto;
-
-    position: relative;
-    width: 100%;
-}
 
   .wrap-img {
     width: 400%;
@@ -495,7 +368,168 @@ export default {};
     position: absolute;
     top: 2%;
     left: 36%;
+  }
+
+  .wrap h1 {
+    font-size: 34px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #85b0cb;
+    line-height: 40px;
+    letter-spacing: 8px;
+  }
+
+  .verathena-box {
+    font-size: 82px;
+    position: absolute;
+    top: 15%;
+    left: 9%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    min-width: 82%;
+    text-align: center;
+  }
+
+  .box-group {
+    width: 92%;
+    height: 24%;
+    position: absolute;
+    border: 0;
+    bottom: 0;
+    right: 0%;
+    top: 60%;
+    left: 4%;
+  }
+
+  .box-2 {
+    display: none;
+  }
+
+  .box-3 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 42%;
+
+    position: absolute;
+  }
+
+  .box-icon-cam {
+    position: absolute;
+    left: 17%;
+  }
+
+  .box-icon-dash{
+    width: 30%;
+    right: 48%;
+    position: absolute;
 }
+
+  .box-icon-ai{
+    position: absolute;
+    left: 33%;
+    top: 3%;
+  }
+  .box-3 h3 {
+    top: 0;
+  }
+
+  .arrow-hover {
+    position: absolute;
+    top: 30%;
+    width: 70%;
+    height: 43px;
+    cursor: pointer;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    text-align: center;
+  }
+
+  .arrow-hover2 {
+    position: absolute;
+    top: 26%;
+    width: 70%;
+    height: 43px;
+    cursor: pointer;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    text-align: center;
+    left: 15%;
+}
+
+  .arrow-hover3 {
+    position: absolute;
+    top: 30%;
+    width: 97%;
+    height: 43px;
+    cursor: pointer;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    text-align: center;
+    right: -15%;
+    top: 28%;
+}
+
+.box5-arrow{
+  display: none;
+}
+
+  .box-4 {
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 42%;
+    position: absolute;
+  }
+
+  .box-4 h3 {
+    top: 0;
+  }
+
+  .box-5 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 50%;
+    position: absolute;
+}
+
+  .box-5 h3 {
+    top: 0;
+  }
+}
+
+/* /////////////////////////IPAD//////////////////////// */
+@media (min-width: 470px) and (max-width: 1250px) {
+  .wrap {
+    height: 1024px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .wrap-img {
+    width: 400%;
+  }
+
+  .logo {
+    width: 30%;
+    margin: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 4%;
+    left: 34%;
+  }
 
   .wrap h1 {
     font-size: 50px;
@@ -509,8 +543,8 @@ export default {};
   .verathena-box {
     font-size: 82px;
     position: absolute;
-    top: 10%;
-    left: 12%;
+    top: 19%;
+    left: 9%;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -536,9 +570,8 @@ export default {};
     border: 0;
     bottom: 0;
     right: 0%;
-    top: 16%;
+    top: 35%;
     left: 6%;
-
   }
 
   .box-3 {
@@ -549,7 +582,7 @@ export default {};
     width: 30%;
     margin: 10%;
     position: absolute;
-}
+  }
   .box-3 h3 {
     top: 0;
   }
@@ -563,14 +596,15 @@ export default {};
     -webkit-transition: all 300ms;
     transition: all 300ms;
     left: -29%;
-}
+    text-align: center;
+  }
 
-.arrow-hover h3{
+  .arrow-hover h3 {
     position: absolute;
     top: 10%;
     font-family: roboto;
     left: 19%;
-}
+  }
 
   .arrow-hover2 {
     position: absolute;
@@ -581,14 +615,15 @@ export default {};
     -webkit-transition: all 300ms;
     transition: all 300ms;
     left: -33%;
-}
+    text-align: center;
+  }
 
-.arrow-hover2 h3{
+  .arrow-hover2 h3 {
     position: absolute;
     top: 10%;
     font-family: roboto;
-    left: 459%
-}
+    left: 459%;
+  }
 
   .arrow-hover3 {
     position: absolute;
@@ -599,38 +634,39 @@ export default {};
     -webkit-transition: all 300ms;
     transition: all 300ms;
     left: -33%;
-}
- .arrow-hover3 h3{
+    text-align: center;
+  }
+  .arrow-hover3 h3 {
     position: absolute;
     top: 10%;
     font-family: roboto;
     left: 588%;
     top: -3px;
-}
+  }
 
   .arrow-hover:hover {
-  border-top: solid #85b0cb;
-  border-width: thick 0 0;
-}
+    border-top: solid #85b0cb;
+    border-width: thick 0 0;
+  }
 
-.arrow-hover2:hover {
-  border-top: solid #85b0cb;
-  border-width: thick 0 0;
-}
+  .arrow-hover2:hover {
+    border-top: solid #85b0cb;
+    border-width: thick 0 0;
+  }
 
-.arrow-hover3:hover {
-  border-top: solid #85b0cb;
-  border-width: thick 0 0;
-}
-  .arrow-hover img{
+  .arrow-hover3:hover {
+    border-top: solid #85b0cb;
+    border-width: thick 0 0;
+  }
+  .arrow-hover img {
     display: none;
   }
 
-  .arrow-hover2 img{
+  .arrow-hover2 img {
     display: none;
   }
 
-  .arrow-hover3 img{
+  .arrow-hover3 img {
     display: none;
   }
 
@@ -642,12 +678,11 @@ export default {};
     width: 30%;
     position: absolute;
     margin: 10%;
-}
+  }
 
   .box-4 h3 {
     top: 0;
   }
-
 
   .box-5 {
     display: -webkit-box;
@@ -657,12 +692,10 @@ export default {};
     width: 30%;
     position: absolute;
     margin: 10%;
-}
+  }
 
   .box-5 h3 {
     top: 0;
   }
-
-
 }
 </style>
