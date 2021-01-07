@@ -1,5 +1,16 @@
 <template>
   <section id="background">
+    <nuxt-link to="/">
+      <div class="icon-menu">
+        <!-- <div class="logo"> -->
+        <img
+          src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
+          alt=""
+        />
+        <small>MENU</small>
+        <!-- </div> -->
+      </div>
+    </nuxt-link>
     <div class="box-3">
       <img
         class="box-icon-cam"
@@ -10,17 +21,6 @@
 
     <!-- ////////////////////////icono home///////////////// -->
     <div class="container row">
-      <nuxt-link to="/">
-        <div class="icon-menu">
-          <div class="logo">
-            <img
-              src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
-              alt=""
-            />
-            <small>MENU</small>
-          </div>
-        </div>
-      </nuxt-link>
       <!-- COLUMNA 1 -->
       <div class="columna1 col col-lg-6 h-100 w-100">
         <div class="column-title w-75">
@@ -31,11 +31,13 @@
           <h2 class="text-white mt-1">Adding a New Camera</h2>
         </div>
 
-        <input
-          type="text"
-          placeholder="Camera A1 - Building R1 - Floor 1 A"
-          class="form-control mt-3 w-75 p-2 bg-dark"
-        />
+        <div class="cam-input w-75">
+          <input
+            type="text"
+            placeholder="Camera A1 - Building R1 - Floor 1 A"
+            class="form-control mt-3 p-2 bg-dark"
+          />
+        </div>
         <!-- <span>Camera A1 - Building R1 - Floor 1 A</span> -->
 
         <div class="rowSelect row w-100">
@@ -73,13 +75,16 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sunt? Mollit
           <h2 class="text-white mt-1">Camera Model Preview</h2>
         </div>
 
-        <input
-          type="text"
-          class="form-control mt-3 w-75 p-2 bg-dark"
-          placeholder="https://123.345.234.234"
-        />
-        <div class="icon-success">
-          <i class="fas fa-check-circle"></i>
+        <div class="url-input">
+          <input
+            type="text"
+            class="url form-control mt-3 w-75 p-2 bg-dark"
+            placeholder="https://123.345.234.234"
+          />
+
+          <div class="icon-success">
+            <i class="fas fa-check-circle"></i>
+          </div>
         </div>
 
         <div class="columnaBox3 w-75 mt-5">
@@ -210,11 +215,17 @@ a {
   padding: 0;
   cursor: pointer;
   background: #85b0cb;
-  border-radius: 10px;
+  border-radius: 7px;
   position: absolute;
-  top: -86px;
-  left: 0px;
+  width: 37px;
+  -webkit-transition: all 200ms;
   transition: all 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  top: 6%;
+  left: 3%;
 }
 
 .column-title {
@@ -288,7 +299,7 @@ a {
 .columna1 {
   display: flex;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   flex-flow: column wrap;
 }
 
@@ -357,5 +368,143 @@ a {
   -o-object-fit: cover;
   object-fit: initial;
   width: 100%;
+}
+
+/* ///////////////////////Iphone ///////////////////////////////////////////////////// */
+@media (min-width: 360px) and (max-width: 469px) {
+  #background {
+    background: #191a1d;
+    height: 48em;
+    position: relative;
+  }
+
+  .container {
+    height: 67%;
+    margin: 0 auto;
+    background-size: 100%;
+
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    width: 79%;
+    display: -webkit-box;
+
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+  }
+
+  .box-3 {
+    top: 8%;
+    left: 28%;
+    width: 49%;
+    height: 8%;
+  }
+
+  .box-3 img {
+    display: none;
+  }
+
+  .icon-menu {
+    width: 38px;
+    top: 2%;
+    left: 4%;
+  }
+
+  .rowSelect {
+    height: 12%;
+    width: 100% !important;
+    position: absolute;
+    top: 21%;
+  }
+
+  .select1 {
+    position: absolute;
+    top: -2%;
+    left: 4%;
+    min-width: 45%;
+  }
+
+  .select2 {
+    position: absolute;
+    top: -2%;
+    left: 55%;
+    min-width: 40%;
+  }
+
+  .columnaBox {
+    width: 91% !important;
+    top: 28%;
+  }
+
+  .cam-input {
+    width: 90% !important;
+    position: absolute;
+    top: 7%;
+  }
+
+  .column-title img {
+    width: 10%;
+    position: absolute;
+    left: 3%;
+    top: 1%;
+  }
+
+  .cam-description {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 90%;
+    height: 24%;
+  }
+
+  .columna2 {
+    min-width: 102%;
+  }
+
+  .url-input {
+    width: 100% !important;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+  }
+
+  .url {
+    width: 90% !important;
+  }
+
+  .icon-success {
+    right: 14%;
+    top: 41%;
+  }
+
+  .columnaBox3 {
+    width: 91% !important;
+    top: 28%;
+    position: absolute;
+    top: 14%;
+    height: 40%;
+  }
+
+  .cam-btn {
+    height: 45px;
+    width: 156px;
+  }
+  .cancel-btn {
+    bottom: 14%;
+    left: 30%;
+  }
+
+  .save-continue {
+    position: absolute;
+    bottom: 32%;
+    left: 21%;
+  }
+
+  .save-btn {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
 }
 </style>
