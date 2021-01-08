@@ -1,5 +1,18 @@
 <template>
   <section id="background">
+
+    <nuxt-link to="/">
+        <div class="icon-menu">
+
+            <img
+              src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
+              alt=""
+            />
+            <small>MENU</small>
+
+        </div>
+      </nuxt-link>
+
     <div class="box-3">
       <img
         class="box-icon-cam"
@@ -10,17 +23,7 @@
 
     <!-- ////////////////////////icono home///////////////// -->
     <div class="container row">
-      <nuxt-link to="/">
-        <div class="icon-menu">
-          <div class="logo">
-            <img
-              src="~assets/datavia-assets/datavia-assets/icons/icon-home.svg"
-              alt=""
-            />
-            <small>MENU</small>
-          </div>
-        </div>
-      </nuxt-link>
+
       <!-- COLUMNA 1 -->
       <div class="columna1 col col-lg-6 h-100 w-100">
         <div class="column-title w-75">
@@ -28,11 +31,13 @@
           <h2 class="text-white mt-1">Added Camera Description</h2>
         </div>
 
-        <input
-          type="text"
-          placeholder="Camera A1 - Building R1 - Floor 1 A"
-          class="cam-name form-control mt-3 w-75 p-2 bg-dark"
-        />
+        <div class="cam-input">
+          <input
+            type="text"
+            placeholder="Camera A1 - Building R1 - Floor 1 A"
+            class="cam-name form-control mt-3 w-75 p-2 bg-dark"
+          />
+        </div>
 
         <div class="rowSelect row w-100">
           <input
@@ -235,11 +240,17 @@ a {
   padding: 0;
   cursor: pointer;
   background: #85b0cb;
-  border-radius: 10px;
+  border-radius: 7px;
   position: absolute;
-  top: -86px;
-  left: 0px;
+  width: 37px;
+  -webkit-transition: all 200ms;
   transition: all 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  top: 6%;
+  left: 3%;
 }
 
 .column-title {
@@ -436,5 +447,164 @@ a {
   content: "\f3c5";
   position: absolute;
   left: -70px;
+}
+
+/* /////////////////////////////////IPHONE/////////////////////////////////////////////////////////// */
+@media (min-width: 360px) and (max-width: 469px) {
+  #background {
+    background: #191a1d;
+    height: 48em;
+    position: relative;
+  }
+
+  .container {
+    height: 67%;
+    margin: 0 auto;
+    background-size: 100%;
+
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    width: 79%;
+    display: -webkit-box;
+
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+
+  }
+
+  .box-3 {
+    top: 8%;
+    left: 28%;
+    width: 49%;
+    height: 8%;
+  }
+
+  .box-3 img {
+    display: none;
+  }
+
+  .icon-menu {
+    width: 38px;
+    top: 2%;
+    left: 4%;
+  }
+
+  .rowSelect {
+    height: 12%;
+    width: 100% !important;
+    position: absolute;
+    top: 49%;
+  }
+
+  .select1 {
+    position: absolute;
+    top: -2%;
+    left: 4%;
+    min-width: 41%;
+  }
+
+  .select2 {
+    position: absolute;
+    top: -2%;
+    left: 55%;
+    min-width: 40%;
+  }
+
+  .columnaBox {
+    width: 91% !important;
+    top: -3%;
+  }
+
+  .cam-input {
+    width: 120% !important;
+    position: absolute;
+    top: -7%;
+    left: 5%;
+}
+
+  .column-title i {
+    width: 10%;
+    position: absolute;
+    left: 4%;
+    top: 1%;
+  }
+
+
+
+  .cam-description {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 90%;
+    height: 24%;
+  }
+
+  .columna2 {
+    min-width: 102%;
+
+  }
+
+  .url-input {
+    width: 100% !important;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+  }
+
+  .url {
+    width: 90% !important;
+  }
+
+  .icon-success {
+    right: 14%;
+    top: 41%;
+  }
+
+  .columnaBox3 {
+    width: 96% !important;
+    position: absolute;
+    top: 3%;
+    height: 48%;
+  }
+
+  .cam-spectrum{
+    position: absolute;
+    top: 21%;
+    left: 1%;
+}
+
+  .flat-btn{
+    position: absolute;
+bottom: 45%;
+left: 27%;
+width: 46%;
+  }
+
+  .column-title{
+    min-width: 90%
+  }
+
+  .cam-btn {
+    height: 45px;
+    width: 156px;
+  }
+  .cancel-btn {
+    bottom: 14%;
+    left: 30%;
+  }
+
+  .save-continue {
+    position: absolute;
+    bottom: 32%;
+    left: 21%;
+  }
+
+  .save-btn {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
 }
 </style>
