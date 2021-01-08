@@ -60,7 +60,7 @@
         />
         <!-- <h3>Intelligent Dashboard</h3> -->
         <div class="arrow-hover3">
-          <div class="menu-bar">
+          <div class="menu-bar2">
             <h3>Intelligent Dashboard</h3>
           </div>
           <img
@@ -173,7 +173,7 @@ export default {};
 }
 
 .box-3 .box-icon-cam {
-  width: 35%;
+  width: 45%;
 }
 
 .box-3 h3 {
@@ -186,18 +186,35 @@ export default {};
 
 .box-4 {
   display: -webkit-box;
-  display: flex;
-  -webkit-box-align: baseline;
-  align-items: baseline;
-  width: 245px;
-  height: 135px;
-  top: 21%;
-  left: 32%;
-  position: absolute;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 59%;
+    position: absolute;
+    top: 0%;
+    left: 26%;
 }
 
 .box-4 .box-icon-ai {
-  width: 23%;
+  width: 45%;
+}
+
+.menu-bar{
+    display: -webkit-box;
+    display: flex;
+    width: 194%;
+    position: absolute;
+    top: 165%;
+    left: -32%;
+}
+
+.menu-bar2{
+    display: -webkit-box;
+    display: flex;
+    width: 194%;
+    position: absolute;
+    top: 165%;
+    left: -32%;
 }
 
 .box-4 h3 {
@@ -209,19 +226,18 @@ export default {};
 }
 
 .box-5 {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: baseline;
-  align-items: baseline;
-  width: 245px;
-  height: 135px;
-  top: 21%;
-  left: 65%;
-  position: absolute;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    width: 59%;
+    position: absolute;
+    top: 80%;
+    left: 35%;
 }
 
 .box-5 .box-icon-dash {
-  width: 30%;
+  width: 45%;
 }
 
 .box-5 h3 {
@@ -249,11 +265,14 @@ export default {};
 
 .arrow-hover2 {
   position: absolute;
-  top: 94px;
-  width: 101%;
-  height: 43px;
-  cursor: pointer;
-  transition: all 300ms;
+    top: 60%;
+    width: 70%;
+    height: 0;
+    cursor: pointer;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+
+    left: 6%;
 }
 
 .arrow-hover2 h3 {
@@ -358,27 +377,28 @@ export default {};
   }
 
   .wrap-img {
-    width: 400%;
+    display: none;
   }
 
   .logo {
-    width: 30%;
+    width: 50%;
     margin: 10px;
     cursor: pointer;
     position: absolute;
     top: 2%;
-    left: 36%;
+    left: 23%;
   }
 
-  .wrap h1 {
-    font-size: 34px;
+  .wrap h1  {
+    font-size: 32px;
     font-family: "Roboto";
-    font-weight: 300;
+    font-weight: 100;
     color: #85b0cb;
-    line-height: 40px;
+    line-height: 52px;
     letter-spacing: 8px;
-  }
-
+    position: absolute;
+    left: 3%;
+}
   .verathena-box {
     font-size: 82px;
     position: absolute;
@@ -400,7 +420,7 @@ export default {};
     border: 0;
     bottom: 0;
     right: 0%;
-    top: 60%;
+    top: 63%;
     left: 4%;
   }
 
@@ -413,10 +433,11 @@ export default {};
     display: flex;
     -webkit-box-align: baseline;
     align-items: baseline;
-    width: 42%;
-
+    width: 59%;
     position: absolute;
-  }
+    top: -80%;
+    left: 26%;
+}
 
   .box-icon-cam {
     position: absolute;
@@ -440,14 +461,68 @@ export default {};
 
   .arrow-hover {
     position: absolute;
-    top: 30%;
+    top: 60%;
     width: 70%;
-    height: 43px;
+    height: 0;
     cursor: pointer;
     -webkit-transition: all 300ms;
     transition: all 300ms;
-    text-align: center;
+
+    left: 6%;
+}
+
+  .arrow-hover h3{
+    position: absolute;
+    top: 10%;
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+}
+
+  .arrow-hover img{
+    display: none;
   }
+
+  .arrow-hover2 img{
+    display: none;
+  }
+
+  .arrow-hover2 h3{
+    position: absolute;
+    top: 10%;
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+}
+
+  .arrow-hover3 img{
+    display: none;
+  }
+
+  .arrow-hover3 h3{
+    position: absolute;
+    top: 10%;
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+}
+
+  .arrow-hover:hover{
+    display: none;
+  }
+
+  .arrow-hover2:hover{
+    display: none;
+  }
+
+  .arrow-hover3:hover{
+    display: none;
+  }
+
+
 
   .arrow-hover2 {
     position: absolute;
