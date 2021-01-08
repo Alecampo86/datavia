@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-argon-dashboard-pro",
+  "name": "datavia",
   "version": "1.0.0",
-  "description": "Nuxt version of the Vue Argon Dashboard Pro",
+  "description": "Welcome to Verathena Platform",
   "author": "Creative Tim",
   "private": true,
   "scripts": {

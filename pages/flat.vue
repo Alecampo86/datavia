@@ -438,6 +438,12 @@ a {
   position: absolute;
   left: -70px;
 }
+
+.cam-input{
+    position: absolute;
+    left: 12%;
+    width: 99%;
+}
 /* /////////////////////////////////IPHONE/////////////////////////////////////////////////////////// */
 @media (min-width: 360px) and (max-width: 469px) {
   #background {

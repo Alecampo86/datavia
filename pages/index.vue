@@ -172,8 +172,19 @@ export default {};
   top: 15%;
 }
 
+.menu-bar2 {
+  display: -webkit-box;
+  display: flex;
+  width: 6%;
+
+  position: absolute;
+  top: 15%;
+}
+
 .box-3 .box-icon-cam {
-  width: 45%;
+  width: 40%;
+  top: -9%;
+  position: absolute;
 }
 
 .box-3 h3 {
@@ -186,35 +197,18 @@ export default {};
 
 .box-4 {
   display: -webkit-box;
-    display: flex;
-    -webkit-box-align: baseline;
-    align-items: baseline;
-    width: 59%;
-    position: absolute;
-    top: 0%;
-    left: 26%;
+  display: flex;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  width: 245px;
+  height: 135px;
+  top: 21%;
+  left: 32%;
+  position: absolute;
 }
 
 .box-4 .box-icon-ai {
-  width: 45%;
-}
-
-.menu-bar{
-    display: -webkit-box;
-    display: flex;
-    width: 194%;
-    position: absolute;
-    top: 165%;
-    left: -32%;
-}
-
-.menu-bar2{
-    display: -webkit-box;
-    display: flex;
-    width: 194%;
-    position: absolute;
-    top: 165%;
-    left: -32%;
+  width: 23%;
 }
 
 .box-4 h3 {
@@ -226,18 +220,19 @@ export default {};
 }
 
 .box-5 {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: baseline;
-    align-items: baseline;
-    width: 59%;
-    position: absolute;
-    top: 80%;
-    left: 35%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  width: 245px;
+  height: 135px;
+  top: 21%;
+  left: 65%;
+  position: absolute;
 }
 
 .box-5 .box-icon-dash {
-  width: 45%;
+  width: 30%;
 }
 
 .box-5 h3 {
@@ -265,14 +260,11 @@ export default {};
 
 .arrow-hover2 {
   position: absolute;
-    top: 60%;
-    width: 70%;
-    height: 0;
-    cursor: pointer;
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
-
-    left: 6%;
+  top: 94px;
+  width: 101%;
+  height: 43px;
+  cursor: pointer;
+  transition: all 300ms;
 }
 
 .arrow-hover2 h3 {
@@ -353,7 +345,7 @@ export default {};
   transform: rotate(270deg);
   position: absolute;
   top: 28%;
-  right: 63%;
+  right: 70%;
   transition: all 300ms;
 }
 
@@ -367,7 +359,7 @@ export default {};
 /* ///////////////////////Iphone ///////////////////////////////////////////////////// */
 @media (min-width: 360px) and (max-width: 469px) {
   .wrap {
-    height: 667px;
+    height: 740px;
     margin: 0 auto;
 
     position: relative;
@@ -389,7 +381,7 @@ export default {};
     left: 23%;
   }
 
-  .wrap h1  {
+  .wrap h1 {
     font-size: 32px;
     font-family: "Roboto";
     font-weight: 100;
@@ -398,7 +390,7 @@ export default {};
     letter-spacing: 8px;
     position: absolute;
     left: 3%;
-}
+  }
   .verathena-box {
     font-size: 82px;
     position: absolute;
@@ -420,7 +412,7 @@ export default {};
     border: 0;
     bottom: 0;
     right: 0%;
-    top: 63%;
+    top: 59%;
     left: 4%;
   }
 
@@ -437,23 +429,24 @@ export default {};
     position: absolute;
     top: -80%;
     left: 26%;
-}
+  }
 
   .box-icon-cam {
     position: absolute;
     left: 17%;
+    width: 45% !important;
   }
 
-  .box-icon-dash{
-    width: 30%;
-    right: 48%;
-    position: absolute;
-}
+  .box-icon-dash {
+    align-self: auto;
+    margin: 0 auto;
+    width: 35% !important;
+  }
 
-  .box-icon-ai{
-    position: absolute;
-    left: 33%;
-    top: 3%;
+  .box-icon-ai {
+    align-self: auto;
+    margin: 0 auto;
+    width: 33% !important;
   }
   .box-3 h3 {
     top: 0;
@@ -469,96 +462,118 @@ export default {};
     transition: all 300ms;
 
     left: 6%;
-}
+  }
 
-  .arrow-hover h3{
+  .arrow-hover h3 {
     position: absolute;
     top: 10%;
     font-family: roboto;
     font-size: 14px;
     font-weight: 100;
     color: white;
-}
+  }
 
-  .arrow-hover img{
+  .arrow-hover img {
     display: none;
   }
 
-  .arrow-hover2 img{
+  .arrow-hover2 img {
     display: none;
   }
 
-  .arrow-hover2 h3{
+  .arrow-hover2 h3 {
     position: absolute;
     top: 10%;
     font-family: roboto;
     font-size: 14px;
     font-weight: 100;
     color: white;
-}
+  }
 
-  .arrow-hover3 img{
+  .arrow-hover3 img {
     display: none;
   }
 
-  .arrow-hover3 h3{
+  .arrow-hover3 h3 {
     position: absolute;
     top: 10%;
     font-family: roboto;
     font-size: 14px;
     font-weight: 100;
     color: white;
-}
+  }
 
-  .arrow-hover:hover{
+  .arrow-hover:hover {
     display: none;
   }
 
-  .arrow-hover2:hover{
+  .arrow-hover2:hover {
     display: none;
   }
 
-  .arrow-hover3:hover{
+  .arrow-hover3:hover {
     display: none;
   }
-
-
 
   .arrow-hover2 {
     position: absolute;
-    top: 26%;
-    width: 70%;
+    top: 62%;
+    width: 95%;
     height: 43px;
     cursor: pointer;
     -webkit-transition: all 300ms;
     transition: all 300ms;
     text-align: center;
-    left: 15%;
-}
+    left: 3%;
+  }
+
+  .menu-bar {
+    display: -webkit-box;
+    display: flex;
+    width: 90%;
+    position: absolute;
+    top: 26%;
+    left: 8%;
+
+    height: 79%;
+  }
+
+  .menu-bar2 {
+    display: -webkit-box;
+    display: flex;
+    width: 90%;
+    position: absolute;
+    top: 26%;
+    left: 8%;
+
+    height: 79%;
+  }
 
   .arrow-hover3 {
     position: absolute;
-    top: 30%;
-    width: 97%;
-    height: 43px;
+    top: 53%;
+    width: 70%;
+    height: 20%;
     cursor: pointer;
     -webkit-transition: all 300ms;
     transition: all 300ms;
     text-align: center;
-    right: -15%;
-    top: 28%;
-}
+    left: 14%;
+  }
 
-.box5-arrow{
-  display: none;
-}
+  .box5-arrow {
+    display: none;
+  }
 
   .box-4 {
     display: flex;
     -webkit-box-align: baseline;
     align-items: baseline;
-    width: 42%;
+    width: 64%;
     position: absolute;
+    top: 2%;
+    height: 80%;
+    left: 17%;
   }
 
   .box-4 h3 {
@@ -566,13 +581,16 @@ export default {};
   }
 
   .box-5 {
-    display: -webkit-box;
     display: flex;
     -webkit-box-align: baseline;
     align-items: baseline;
-    width: 50%;
+    width: 64%;
     position: absolute;
-}
+
+    height: 80%;
+    left: 17%;
+    top: 94%;
+  }
 
   .box-5 h3 {
     top: 0;
@@ -590,8 +608,6 @@ export default {};
     align-items: center;
     justify-content: center;
   }
-
-
 
   .wrap-img {
     width: 400%;

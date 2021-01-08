@@ -1,6 +1,5 @@
 <template>
   <section id="background">
-
     <nuxt-link to="/">
       <div class="icon-menu">
         <!-- <div class="logo"> -->
@@ -23,17 +22,14 @@
 
     <!-- ////////////////////////icono home///////////////// -->
     <div class="container row">
-
       <!-- COLUMNA 1 -->
       <div class="columna1 col col-lg-6 h-100 w-100">
-
         <div class="column-title w-75">
           <i class="file fas fa-file-alt"></i>
           <h2 class="text-white mt-1">Added Camera Description</h2>
         </div>
 
-
-        <div class="cam-input ">
+        <div class="cam-input">
           <input
             type="text"
             placeholder="Camera A1 - Building R1 - Floor 1 A"
@@ -41,10 +37,8 @@
           />
         </div>
 
-
-
         <div class="rowSelect row w-100">
-            <input
+          <input
             type="select"
             class="select1 form-control bg-dark mt-3 col-4 p-2"
             placeholder="Sony"
@@ -69,22 +63,20 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sunt? Mollit
 
       <!-- COLUMNA 2 -->
       <div class="columna2 col col-lg-6 h-100 w-100">
-        <div class="column-title w-75">
+        <div class="column-title2 w-75">
           <i class="location-icon fas fa-map-marker-alt"></i>
 
           <h2 class="text-white mt-1">Associate Camera to Location</h2>
         </div>
 
-
-
         <div class="columnaBox3 w-100 mt-5">
-
           <nuxt-link to="/flat">
             <button class="btn flat-btn">
-              <img class="gear fas fa-cog "
-                  src="~assets/datavia-assets/datavia-assets/icons/icon-setup.svg"/>
-                  <span>Add Flat</span>
-
+              <img
+                class="gear fas fa-cog"
+                src="~assets/datavia-assets/datavia-assets/icons/icon-setup.svg"
+              />
+              <span>Add Flat</span>
             </button>
           </nuxt-link>
         </div>
@@ -169,31 +161,27 @@ a {
   font-size: 12px;
 }
 
-.flat-btn{
-
+.flat-btn {
   color: black;
   height: 35px;
   width: 130px;
   background: #85b0cb;
   position: absolute;
   bottom: 200px;
-    left: 240px;
+  left: 240px;
   width: 120px;
   border-radius: 5px;
   -webkit-transition: all 100ms;
   transition: all 100ms;
   font-size: 12px;
-
-
 }
 
-.columnaBox3 img{
-
-    object-fit: initial;
-    width: 16%;
-    position: absolute;
-    left: 18px;
-    top: 7px;
+.columnaBox3 img {
+  object-fit: initial;
+  width: 16%;
+  position: absolute;
+  left: 18px;
+  top: 7px;
 }
 
 .container {
@@ -215,9 +203,9 @@ a {
   justify-content: center;
 }
 
-.cam-name{
-    position: absolute;
-    top: 204px;
+.cam-name {
+  position: absolute;
+  top: 204px;
 }
 
 .form-control {
@@ -225,15 +213,15 @@ a {
   cursor: pointer;
 }
 .cam-description {
-    position: absolute;
-    bottom: 140px;
-    left: 73px;
-    width: 454px;
-    height: 101px;
+  position: absolute;
+  bottom: 140px;
+  left: 73px;
+  width: 454px;
+  height: 101px;
 }
-.cam-name{
-    position: absolute;
-    top: 204px;
+.cam-name {
+  position: absolute;
+  top: 204px;
 }
 .form-control:focus {
   border-color: #85b0cb;
@@ -269,6 +257,13 @@ a {
   align-content: center;
 }
 
+.column-title2 {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  align-content: center;
+}
+
 .column-title img {
   width: 28px;
   position: absolute;
@@ -276,22 +271,22 @@ a {
   top: 4px;
 }
 
-.column-title i {
-    content: "\f3c5";
-    color: #85b0cb;
-    position: absolute;
-    left: 80px;
-    top: 2px;
-    font-size: x-large;
+.column-title2 i {
+  content: "\f3c5";
+  color: #85b0cb;
+  position: absolute;
+  left: 80px;
+  top: 2px;
+  font-size: x-large;
 }
 
-.file{
-    content: "\f3c5";
-    color: #85b0cb;
-    position: absolute;
-    left: 160px;
-    top: 2px;
-    font-size: x-large;
+.file {
+  content: "\f3c5";
+  color: #85b0cb;
+  position: absolute;
+  left: 13%;
+  top: 2px;
+  font-size: x-large;
 }
 
 .icon-menu small {
@@ -385,13 +380,12 @@ a {
   position: absolute;
   top: 0px;
   cursor: pointer;
-
 }
 
 .flat-btn span {
-    position: absolute;
-    top: 7px;
-    right: 18px;
+  position: absolute;
+  top: 23%;
+  right: 24%;
 }
 
 .columnaBox2 {
@@ -422,10 +416,16 @@ a {
   object-fit: cover;
 }
 
-.fa-map-marker-alt:before {
-    content: "\f3c5";
+.cam-input{
     position: absolute;
-    left: -70px;
+    left: 12%;
+    width: 99%;
+}
+
+.fa-map-marker-alt:before {
+  content: "\f3c5";
+  position: absolute;
+  left: -70px;
 }
 
 /* ///////////////////////Iphone ///////////////////////////////////////////////////// */
@@ -450,7 +450,6 @@ a {
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
-
   }
 
   .box-3 {
@@ -501,16 +500,19 @@ a {
     position: absolute;
     top: -7%;
     left: 5%;
-}
-
-  .column-title i {
-    width: 10%;
-    position: absolute;
-    left: 4%;
-    top: 1%;
   }
 
+  .file {
+    position: absolute;
+    left: 0%;
+  }
 
+  .column-title2 i {
+    width: 10%;
+    position: absolute;
+    left: 25%;
+    top: 0%;
+  }
 
   .cam-description {
     position: absolute;
@@ -522,7 +524,6 @@ a {
 
   .columna2 {
     min-width: 102%;
-
   }
 
   .url-input {
@@ -548,15 +549,15 @@ a {
     height: 48%;
   }
 
-  .flat-btn{
+  .flat-btn {
     position: absolute;
-bottom: 45%;
-left: 27%;
-width: 46%;
+    bottom: 45%;
+    left: 27%;
+    width: 46%;
   }
 
-  .column-title{
-    min-width: 90%
+  .column-title {
+    min-width: 90%;
   }
 
   .cam-btn {
@@ -580,5 +581,4 @@ width: 46%;
     left: 0%;
   }
 }
-
 </style>

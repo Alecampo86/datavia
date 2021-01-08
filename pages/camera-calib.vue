@@ -751,7 +751,7 @@ a {
   .calib-cancel {
     position: absolute;
     bottom: -19%;
-    left: 34%;
+    left: 32%;
   }
 
   .calib-pic {

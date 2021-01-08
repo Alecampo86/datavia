@@ -272,6 +272,13 @@ a {
   transition: all 200ms;
 }
 
+.url-input {
+    width: 98%;
+    position: absolute;
+    left: 13%;
+    top: 4%;
+}
+
 .box-3 {
   display: flex;
 
@@ -346,8 +353,8 @@ a {
   color: greenyellow;
   font-size: 25px;
   position: absolute;
-  right: 90px;
-  top: 54px;
+  right: 28%;
+top: 41%;
 }
 
 .columnaBox3 {

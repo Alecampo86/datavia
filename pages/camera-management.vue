@@ -400,6 +400,13 @@ export default {};
     bottom: 25%;
     left: 35%;
   }
+
+  .box-icon-cam {
+    width: 20%;
+    position: absolute;
+    top: -22% !important;
+    left: -18%;
+}
 }
 
 /* /////////////////////////IPAD//////////////////////// */
