@@ -35,7 +35,7 @@
           <input
             type="text"
             placeholder="Camera A1 - Building R1 - Floor 1 A"
-            class="form-control mt-3 p-2 bg-dark"
+            class="cam-name form-control mt-3 p-2 bg-dark"
           />
         </div>
         <!-- <span>Camera A1 - Building R1 - Floor 1 A</span> -->
@@ -422,7 +422,7 @@ a {
     position: absolute;
     top: -2%;
     left: 4%;
-    min-width: 45%;
+    min-width: 41%;
   }
 
   .select2 {
